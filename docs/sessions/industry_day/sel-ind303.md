@@ -1,50 +1,57 @@
-# sel-ind303 - LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
+# LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
 
 [Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
 
-**제목/시간/트랙/발표자**  
-- 제목: LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
+## 세션 정보
+
 - 시간: 2026-05-20 14:30-15:10 KST
-- 트랙: Telecommunications / Artificial Intelligence, Developer Tools, Migration & Modernization
-- 발표자: 문승제 딜리버리 컨설턴트(AWS), 우건희 책임(LG U+)
+- 트랙: Track 7
+- 발표자: 문승제(딜리버리 컨설턴트, AWS), 우건희(책임, LG U+)
 
-**핵심 요약**  
-LG U+는 100개 이상의 온프레미스 애플리케이션을 클라우드로 전환하면서, assessment, design, migration, scale-out 단계 전반에 에이전틱 AI를 적용했다. 목표는 단순 이전이 아니라 운영 표준화, 보안 강화, 마이그레이션 속도/품질 확보, AX 기반 혁신 환경 마련이었다. UCMP에 내재화한 인터뷰 에이전트와 코드 분석 에이전트가 표준화된 입력을 만들고, design agent가 목표 AWS native architecture와 refactoring action item을 생성했다. migration 단계에서는 AWS Transform Custom이 대규모 규칙 기반 변환을 맡고, Kiro IDE와 Utopia 플랫폼이 복잡한 리팩터링 패턴과 조직 표준을 재사용 가능한 지식으로 축적했다.
+## 발표 주제
 
-**주요 포인트**
-- 대규모 온프레미스 환경은 서비스별 인프라/로그/보안/외주 개발사가 분산되어 있어 통합 모니터링, 패치, 보안 대응, AI 도입이 느려지는 문제가 있었다.
-- Assessment 단계의 인터뷰 에이전트는 AWS 마이그레이션 경험이 담긴 61개 질문을 기반으로 답변 품질을 검증하고, 부족하면 재질문해 표준화된 리포트와 JSON을 생성했다.
-- 코드 분석에는 AWS Transform Custom을 활용해 framework/runtime, security/compliance, dependency/CVE, cloud readiness 관점으로 코드를 진단했다.
-- Design 단계는 인터뷰 결과와 코드 분석 결과를 입력으로 목표 아키텍처와 리팩터링 action item을 자동 생성하고 Confluence에 기록했다.
-- Migration 단계에서 Java version upgrade 같은 반복/규칙 기반 대규모 변경은 AWS Transform Custom이 변환, build, validation을 반복하며 PR 형태로 결과를 만들었다.
-- 복잡한 리팩터링은 Kiro IDE의 steering, skill, powers를 활용했고, Utopia 플랫폼이 검증된 기술 표준과 전환 패턴을 중앙 관리했다.
-- LG CTL CLI는 프로젝트 세팅, action item 선택, requirement 생성, Kiro 개발 흐름, 테스트, 문서화, Confluence 업로드, 신규 skill/steering 생성까지 연결했다.
-- 성과는 리드타임 단축, application 품질 향상, immutable/declarative/self-healing 원칙 기반 운영 표준 확립, 여러 개발사가 같은 기준으로 확장 가능한 전환 기반 마련으로 요약됐다.
+이 세션은 LG U+가 100개 이상의 온프레미스 애플리케이션을 클라우드로 전환하면서, assessment, design, migration, scale-out 단계 전반에 에이전틱 AI를 적용한 여정을 소개한 발표다. 목표는 단순 이전이 아니라 운영 표준화, 보안 강화, 마이그레이션 속도와 품질 확보, 클라우드 기반 혁신 환경 마련이었다.
 
-**AWS/기술 키워드**
-- AWS Transform Custom, Kiro IDE, Bedrock AgentCore Runtime, UCMP, Utopia, LG CTL, Confluence, Amazon S3, AWS native architecture, Elasticache 전환, steering/skills/powers, MCP, agentic migration
+발표는 UCMP 기반 분석 체계, 인터뷰 에이전트와 코드 분석 에이전트, design agent의 목표 아키텍처 생성, AWS Transform Custom과 Kiro IDE를 활용한 리팩터링, Utopia 플랫폼을 통한 표준화와 재사용을 다뤘다.
 
-**현장 메모로 남길 점**
-- 마이그레이션 자동화의 핵심은 AI가 코드를 바꾸는 것보다 “분석 결과, 설계 판단, 전환 패턴, 조직 표준”을 재사용 가능한 지식으로 축적하는 데 있었다.
+## 주요 내용
 
-**블로그용 한줄**
-- “LG U+는 대규모 마이그레이션을 에이전틱 AI 워크플로로 재구성해, 전환 작업 자체를 조직 학습 시스템으로 바꾸고 있었다.”
+- LG U+는 대규모 애플리케이션 마이그레이션에서 반복적인 분석, 설계, 코드 전환 작업을 에이전틱 AI로 보조했다.
+- assessment 단계에서는 인터뷰 에이전트와 코드 분석 에이전트가 애플리케이션 현황을 표준화된 입력으로 정리했다.
+- design agent는 목표 AWS native architecture와 refactoring action item을 생성하는 역할로 소개됐다.
+- migration 단계에서는 AWS Transform Custom이 대규모 규칙 기반 변환을 맡고, Kiro IDE가 복잡한 리팩터링과 검증을 지원했다.
+- Utopia 플랫폼은 조직의 마이그레이션 패턴과 표준을 지식으로 축적해 반복 적용하는 기반으로 설명됐다.
+- 실제 코드랩에서는 S3에 적재된 인터뷰 결과와 코드 분석 결과를 기반으로 전환 가능성과 난이도를 평가하는 흐름이 소개됐다.
+- 개발자는 생성된 브랜치와 변경 내용을 리뷰하며 자동화 결과를 검증하는 역할을 맡는다.
 
-### 전사 기반 상세 보강
+## 세부 내용
 
-- 세션 맥락: LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
-- 공식 설명 보강: LG U+ 대규모 애플리케이션 마이그레이션 사례를 기반으로, AWS Transform과 Kiro IDE를 활용한 에이전틱 AI 기반 마이그레이션 방법론을 소개합니다. 코드 분석, 리팩터링, 검증 자동화를 통해 엔터프라이즈 클라우드 마이그레이션의 속도와 품질을 동시에 향상시킨 실제 경험을 공유합니다.
-- 전사에서 반복적으로 확인된 키워드: 개발, 전환, 에이전트, 코드, 표준, 운영, 테스트, 품질, 데이터, 보안
-- 발표에서 두드러진 주제 축: developer, business, governance, agent
+### 대규모 마이그레이션의 과제
 
-#### 발표 흐름
-- 초반: 에이전트, 운영, 코드, 전환, 표준 중심으로 developer, business, governance를 다룬다.
-- 중반: 에이전트, 코드, 전환, 운영, 표준 중심으로 developer, business, governance를 다룬다.
-- 후반: 개발, 전환, 테스트, 표준, 에이전트 중심으로 developer, business, governance를 다룬다.
+대규모 엔터프라이즈 마이그레이션은 애플리케이션 수가 많고 기술 스택이 다양해 단순 이관만으로 끝나지 않는다. 각 시스템의 의존성, 코드 구조, 운영 요구사항, 보안 기준, 배포 방식이 다르기 때문에 표준화된 분석과 설계가 필요하다.
 
-#### 전사에서 확인할 만한 구간
-- 00:55 부근: 고객, 전환 관련 설명이 나온다. 핵심 문맥은 `저는 주로 엔터프라이즈 고객분들의 클라우드 전환을 돋고`
-- 06:04 부근: 에이전트, 워크플로, 전환 관련 설명이 나온다. 핵심 문맥은 `저는 클라우드 전환 가속화를 위한 에이전트와 워크플로우를 설계하고 구현한 역할을 수행하고 있습니다.`
-- 10:03 부근: 전환, 코드, 평가 관련 설명이 나온다. 핵심 문맥은 `이 단계에서는 실제 코드랩에서 전환의 가능성과 난이도를 평가하게 됩니다.`
-- 19:08 부근: 코드, 테스트 관련 설명이 나온다. 핵심 문맥은 `어색스만 테스트 단계에서 S3에 적재된 두 결과물, 인터뷰 결과와 또 코드`
-- 21:14 부근: 개발, 리뷰 관련 설명이 나온다. 핵심 문맥은 `벨드의 브렌치의 피할 형태로 생성되어서 개발자가 바로 리뷰를`
+LG U+는 100개 이상의 온프레미스 애플리케이션을 대상으로 클라우드 전환을 추진하면서, 사람 중심의 분석과 문서화만으로는 속도와 일관성을 확보하기 어렵다고 봤다. 발표에서는 이 지점에 에이전틱 AI를 적용한 접근이 소개됐다.
+
+### Assessment와 Design
+
+assessment 단계에서는 인터뷰 에이전트와 코드 분석 에이전트가 활용됐다. 인터뷰 에이전트는 애플리케이션 담당자와의 질의응답을 구조화하고, 코드 분석 에이전트는 소스코드와 설정을 살펴 전환 난이도와 리팩터링 후보를 찾는다.
+
+design agent는 이 입력을 바탕으로 목표 AWS native architecture와 refactoring action item을 제안한다. 발표에서는 이 과정이 표준화된 산출물을 만들고, 마이그레이션 팀이 초기 분석과 설계에 쓰는 시간을 줄이는 데 도움이 된다고 설명했다.
+
+### Migration 자동화
+
+migration 단계에서는 AWS Transform Custom과 Kiro IDE가 주요 도구로 소개됐다. AWS Transform Custom은 대규모 규칙 기반 코드 변환을 담당하고, Kiro IDE는 복잡한 리팩터링 패턴과 검증 과정에서 개발자의 작업을 지원한다.
+
+발표에서는 전환 결과가 브랜치와 pull request 형태로 생성되어 개발자가 바로 리뷰할 수 있는 흐름이 언급됐다. 자동화가 모든 판단을 대신하는 것이 아니라, 반복적인 변환과 초안 생성을 맡고 개발자가 검증과 최종 판단을 수행하는 구조다.
+
+### Utopia와 지식 축적
+
+LG U+는 Utopia 플랫폼을 통해 마이그레이션 과정에서 얻은 패턴과 조직 표준을 축적하는 방향을 제시했다. 한 번 해결한 리팩터링 패턴이나 아키텍처 규칙을 재사용하면, 다음 애플리케이션 전환에서 더 빠르고 일관된 결과를 만들 수 있다.
+
+이 접근은 마이그레이션을 개별 프로젝트의 반복이 아니라 지식이 쌓이는 프로그램으로 전환한다. 발표에서는 assessment, design, migration, scale-out 단계가 에이전트와 플랫폼을 통해 연결되는 구조가 강조됐다.
+
+## 정리
+
+이 세션의 핵심은 대규모 마이그레이션에서 에이전틱 AI가 분석, 설계, 코드 변환, 검증 초안을 표준화하는 데 도움을 줄 수 있다는 점이다. LG U+는 AWS Transform, Kiro IDE, UCMP, Utopia를 조합해 반복 작업을 줄이고 개발자가 검증과 판단에 집중하는 구조를 만들었다.
+
+발표는 클라우드 마이그레이션의 품질과 속도를 높이려면 자동화 도구뿐 아니라 조직 표준과 지식 재사용 체계를 함께 설계해야 한다는 점을 보여줬다.

@@ -1,50 +1,51 @@
-# sel-ind230 - [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
+# [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
 
 [Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
 
-**제목/시간/트랙/발표자**  
-- 제목: [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
+## 세션 정보
+
 - 시간: 2026-05-20 14:30-15:10 KST
-- 트랙: Aerospace & Satellite, Federal Government, Manufacturing & Industrial / Artificial Intelligence, Business Applications, Industry Solutions
-- 발표자: 김용재 CTO(위로보틱스), 배재경 CTO(RLWRLD)
+- 트랙: Track 6
+- 발표자: 김용재(CTO, 위로보틱스), 배재경(CTO, RLWRLD)
 
-**핵심 요약**  
-RLWRLD와 위로보틱스는 피지컬 AI에서 로봇 파운데이션 모델과 하드웨어 플랫폼이 어떻게 함께 발전해야 하는지를 보여줬다. RLWRLD는 VLA 기반 Robot Foundation Model에 motion, physics, memory module을 더해 움직이는 물체 예측, 촉각/힘 정보 활용, 장기 맥락 기억을 강화했고, 이를 AWS의 대규모 GPU/스토리지 인프라로 학습했다. 학습에는 S3, FSx for Lustre, ParallelCluster, H200 GPU 64 nodes, L4S 기반 렌더링/시뮬레이션, Elastic Fabric Adapter 등이 활용됐다. 위로보틱스는 힘과 접촉을 잘 느끼는 휴머노이드 Alex를 소개하며, AWS Physical AI Fellowship에서 드릴/볼팅 조작 파이프라인을 6주 안에 구축한 여정을 공유했다.
+## 발표 주제
 
-**주요 포인트**
-- RLWRLD의 모델은 VLA 구조에 액션 헤드를 붙인 형태이며, 기존 VLA가 약한 움직임 예측, 촉각/힘 정보, 기억 기반 작업을 보완하는 세 모듈을 강조했다.
-- 데이터는 teleoperation, human demonstration, synthetic/augmented data, open data로 구성되며, 비디오 생성 모델과 IDM 기반 pseudo action, filtering으로 증강했다.
-- human data는 wearable 없이 multi-camera로 사람 손 관절 정보를 추출하고 로봇으로 retargeting한 뒤 simulation 렌더링을 통해 학습 데이터로 만들었다.
-- pretrain/mid-train/fine-tuning 구조로 학습했고, H200 GPU 64 nodes에서 pretrain은 약 8일 이상, mid-train은 하루 미만이 걸렸다고 설명했다.
-- ParallelCluster는 Slurm 기반으로 활용됐고, 원본 데이터는 S3, 빠른 접근이 필요한 학습 데이터와 checkpoint는 FSx for Lustre에 두었다.
-- 모방학습 후 병목 구간에 추가 데이터를 모으고, 강화학습으로 손잡이를 돌리는 작업의 속도를 기존 대비 약 3배 높인 사례가 소개됐다.
-- 위로보틱스 Alex는 15자유도 hand, 전신 force sensing, 높은 backdrivability/compliance, 30kg 수준 payload를 강조했다.
-- Physical AI Fellowship에서는 Amazon Kinesis, S3, Glue, EC2, NVIDIA Isaac Lab/물리 엔진을 활용해 데이터 수집, 정제, 강화학습, 배포 파이프라인을 구축했다.
+이 세션은 피지컬 AI 시대에 로봇 파운데이션 모델과 휴머노이드 하드웨어가 어떻게 함께 발전해야 하는지 보여준 발표다. RLWRLD는 AWS 기반 대규모 인프라에서 Robot Foundation Model을 학습한 과정을 소개했고, 위로보틱스는 휴머노이드 Alex를 통해 실제 조작 기능을 구현한 6주간의 Physical AI Fellowship 여정을 공유했다.
 
-**AWS/기술 키워드**
-- AWS ParallelCluster, Slurm, Amazon S3, Amazon FSx for Lustre, Amazon EC2 H200/L4S, Elastic Fabric Adapter, AWS Glue, Amazon Kinesis, AWS HyperPod, Bedrock 구상, NVIDIA Isaac Lab, VLA, RFM, teleoperation, reinforcement learning
+발표의 중심은 로봇 AI가 모델만으로 완성되지 않는다는 점이다. 데이터 수집, 시뮬레이션, 렌더링, 대규모 GPU 학습, 강화학습, 하드웨어 감각, 실시간 제어가 하나의 시스템으로 연결되어야 실제 작업을 수행하는 피지컬 AI가 된다.
 
-**현장 메모로 남길 점**
-- 피지컬 AI는 모델만의 문제가 아니라 데이터 수집, 시뮬레이션, 실시간 제어, 하드웨어 감각, 학습 인프라가 한꺼번에 맞물려야 하는 전체 시스템 문제라는 점이 선명했다.
+## 주요 내용
 
-**블로그용 한줄**
-- “RLWRLD와 위로보틱스 세션은 피지컬 AI가 거대 모델 학습과 로봇 하드웨어 감각이 만나는 지점에서 현실화되고 있음을 보여줬다.”
+- RLWRLD는 VLA 기반 Robot Foundation Model에 motion, physics, memory module을 더해 움직임 예측, 촉각과 힘 정보, 장기 맥락 기억을 보강했다고 설명했다.
+- 학습 데이터는 teleoperation, human demonstration, synthetic/augmented data, open data로 구성됐다.
+- multi-camera 기반 human data에서 손 관절 정보를 추출하고 로봇 동작으로 retargeting한 뒤, simulation rendering을 통해 학습 데이터로 확장하는 흐름이 소개됐다.
+- 학습 인프라는 AWS ParallelCluster, Slurm, Amazon S3, Amazon FSx for Lustre, EC2 H200/L4S, Elastic Fabric Adapter 등을 활용했다.
+- 원본 데이터는 S3에 두고 빠른 접근이 필요한 학습 데이터와 checkpoint는 FSx for Lustre에 두는 구조로 설명됐다.
+- 위로보틱스 Alex는 15자유도 hand, 전신 force sensing, 높은 backdrivability와 compliance, 30kg 수준 payload를 특징으로 소개됐다.
+- 드릴 작업 구현 과정에서는 데이터 수집, 정제, 시뮬레이션, 강화학습, 배포까지 이어지는 파이프라인이 설명됐다.
 
-### 전사 기반 상세 보강
+## 세부 내용
 
-- 세션 맥락: [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
-- 공식 설명 보강: 피지컬 AI 시대, 로봇이 실제 세계에서 작업하려면 대규모 학습 인프라와 실전 구현 역량이 모두 필요합니다. 본 세션에서는 리얼월드가 AWS ParallelCluster, S3, FSx for Lustre를 활용해 RFM(Robot Foundation Model)을 학습한 과정과, 위로보틱스가 자체 휴머노이드 로봇 Alex로 드릴 작업을 구현한 6주간의 AWS Physical AI Fellowship 여정을 공유합니다. 데이터 수집부터 시뮬레이션 환경 구성,...
-- 전사에서 반복적으로 확인된 키워드: 데이터, 개발, 테스트, S3, 감사, GPU, 인가, 평가, 관측, 매출
-- 발표에서 두드러진 주제 축: data, developer, security, infra
+### Robot Foundation Model 학습
 
-#### 발표 흐름
-- 초반: 데이터, 테스트, S3, GPU, 매출 중심으로 data, developer, infra를 다룬다.
-- 중반: 데이터, 개발, 평가, 인가, 감사 중심으로 data, developer, security를 다룬다.
-- 후반: 데이터, 개발, 감사, 품질, 테스트 중심으로 data, developer, security를 다룬다.
+RLWRLD는 로봇이 실제 환경에서 작업하려면 시각 정보와 언어 명령만으로는 부족하다고 설명했다. 움직이는 물체를 예측하고, 접촉과 힘을 이해하며, 이전 맥락을 기억하는 능력이 필요하다. 이를 위해 기존 VLA 구조에 motion, physics, memory module을 더한 Robot Foundation Model 접근을 제시했다.
 
-#### 전사에서 확인할 만한 구간
-- 00:24 부근: S3 관련 설명이 나온다. 핵심 문맥은 `S3, FSX4 Commission Commission`
-- 05:04 부근: 테스트 관련 설명이 나온다. 핵심 문맥은 `이 케이스는 책상 위에 명한 같은 아주 얇은 물체가 있고 그것을 쑥스러워가지고 딱 잡아내는 그런 테스트인데요.`
-- 13:49 부근: S3, 데이터 관련 설명이 나온다. 핵심 문맥은 `기본적으로 원본 학습 데이터는 s3에다 올려놓고요.`
-- 15:10 부근: 데이터 관련 설명이 나온다. 핵심 문맥은 `그 부분만 추가로 못 중에서 학습 데이터를 모우고`
-- 16:12 부근: 데이터 관련 설명이 나온다. 핵심 문맥은 `그래서 그 데이터를 축구척한 뒤에`
+데이터 전략도 중요하게 다뤄졌다. teleoperation과 human demonstration, synthetic data, open data를 조합하고, 비디오 생성 모델과 pseudo action, filtering을 통해 학습 데이터를 보강한다. 사람의 동작 데이터를 로봇 동작으로 옮기는 retargeting 과정도 핵심 단계로 설명됐다.
+
+### AWS 기반 학습 인프라
+
+대규모 로봇 모델 학습에는 GPU와 스토리지, 네트워크가 함께 필요하다. 발표에서는 ParallelCluster와 Slurm 기반 클러스터, H200 GPU 노드, L4S 기반 렌더링과 시뮬레이션, Elastic Fabric Adapter가 소개됐다.
+
+스토리지 구조는 원본 데이터와 고속 학습 데이터를 분리했다. S3는 원본 학습 데이터 저장소로, FSx for Lustre는 학습 중 빠르게 접근해야 하는 데이터와 checkpoint 저장소로 활용됐다. 이 구조는 로봇 모델 학습에서 데이터 이동과 I/O 병목을 줄이기 위한 설계로 설명됐다.
+
+### 휴머노이드 Alex와 조작 기능
+
+위로보틱스는 휴머노이드 Alex를 통해 피지컬 AI가 실제 물체와 접촉하며 작업을 수행하는 데 필요한 하드웨어 조건을 설명했다. 손의 자유도, 전신 force sensing, backdrivability, compliance 같은 특성은 로봇이 도구를 잡고 힘을 조절하는 데 중요하다.
+
+Physical AI Fellowship에서는 드릴과 볼팅 작업을 대상으로 데이터 수집, 정제, 시뮬레이션 환경 구성, 강화학습, 배포까지 이어지는 파이프라인을 만들었다. 모방학습 후 병목 구간의 데이터를 추가로 모으고 강화학습으로 작업 속도를 개선한 사례도 소개됐다.
+
+## 정리
+
+이 세션의 핵심은 피지컬 AI가 모델, 데이터, 시뮬레이션, 하드웨어, 인프라의 결합으로 현실화된다는 점이다. RLWRLD는 대규모 학습 인프라와 데이터 전략을, 위로보틱스는 실제 로봇 조작과 하드웨어 감각의 중요성을 보여줬다.
+
+로봇의 미래는 단순히 더 큰 모델을 학습하는 것만으로 오지 않는다. 실제 세계에서 움직이고 접촉하는 로봇을 만들려면 AWS 기반 학습 인프라, 시뮬레이션, 강화학습, 정교한 하드웨어 설계가 함께 맞물려야 한다는 메시지가 발표의 중심이었다.
