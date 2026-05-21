@@ -1,86 +1,71 @@
 # AWS Summit Seoul 2026 Industry Day 영상 요약
 
-작성 기준: AWS Summit Seoul 2026 Day 1 | Industry Day 세션 VOD를 기준으로 정리했다. 각 세션은 가능한 경우 VOD 음성 전사를 기반으로 요약하고, 전사나 VOD 접근에 실패한 경우 공식 세션 메타데이터 기반 보조 요약으로 표시한다.
-
-## 읽는 방법
-
-각 세션은 동일한 형식으로 정리한다.
-
-- 세션 정보: 시간, 트랙, 발표자, 태그
-- 핵심 요약: 발표의 문제의식과 결론
-- 주요 포인트: 발표에서 실제로 기억할 만한 내용
-- AWS/기술 키워드: 언급된 서비스, 아키텍처, 방법론
-- 현장 메모로 남길 점: 참석 후기나 블로그에 붙이기 좋은 관찰
-- 블로그용 한줄: 후기에 바로 가져다 쓸 수 있는 문장
-
-## 전체 흐름 메모
-
-Industry Day의 큰 흐름은 산업별 AI 적용 사례가 단순한 PoC를 넘어 실제 운영, 개발 방식, 고객 경험, 물리 세계 자동화로 확장되고 있다는 점이다. 특히 에이전틱 AI, AI-DLC, 피지컬 AI, 영상/멀티모달 AI, 데이터 거버넌스, 마이그레이션 자동화가 반복적으로 등장한다. 발표들은 공통적으로 "모델을 붙였다"보다 "기존 업무와 데이터 구조를 AI가 이해하고 실행할 수 있는 형태로 바꿨다"는 쪽에 초점이 있다.
+이 문서는 AWS Summit Seoul 2026 라이브스트림 VOD와 세션 메타데이터를 바탕으로 세션별로 정리한 것이다. 실제 공유와 탐색이 쉽도록 세션 단위로 재구성했다.
 
 ## 세션 인덱스
 
 | 시간 | 트랙 | ID | 세션 |
 |---|---|---|---|
-| 09:30 | Keynote | sel-key001 | 기조연설 - Industry Day |
-| 11:10 | Track 1 | sel-ind226 | Amazon's AI Strategy |
-| 11:10 | Track 2 | sel-ind234 | [GS리테일] 숏폼 시대, GS SHOP의 영상기반 AI 상품 추천플랫폼 구축기 |
-| 11:10 | Track 3 | sel-ind208 | [KB국민은행] KBaaS, 금융이 플랫폼 속으로 : KB국민은행의 임베디드 금융 전략과 API 인프라 현대화 |
-| 11:10 | Track 4 | sel-ind213 | [웅진씽크빅] 웅진씽크빅의 AI-DLC를 활용한 교육자용 AI 에이전트 구축기 |
-| 11:10 | Track 5 | sel-ind216 | [현대자동차] 현대자동차의 AI 기반 마켓인텔리전스 혁신 (AI for MI) |
-| 11:10 | Track 6 | sel-ind105 | AWS 피지컬 AI로 실현하는 기업의 차세대 혁신 전략 |
-| 11:10 | Track 7 | sel-ind228 | [SK텔레콤] SK텔레콤, 이제는 AI에게 필요한 데이터 플랫폼으로 |
-| 11:10 | Track 8 | sel-ind203 | [여기어때컴퍼니] Kiro CLI로 실현한 여기어때의 데이터베이스 현대화 |
-| 11:10 | Track 9 | sel-wps105 | [정보통신산업진흥원] AI G3 코리아: NIPA와 AWS가 만드는 공공 혁신 |
-| 12:50 | Track 1 | sel-ind225 | [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정 |
-| 12:50 | Track 2 | sel-ind233 | [AMOREPACIFIC] AMOREPACIFIC의 AWS 기반 AI뷰티테크 플랫폼 서비스 |
-| 12:50 | Track 3 | sel-ind206 | [미래에셋증권] Convert To AI-Ready Data 미래에셋증권의 GraphRAG 기반 상품지식DB 구축기 |
-| 12:50 | Track 4 | sel-ind212 | [AB180] AB180이 SaaS 에이전틱 AI를 설계하는 방법 |
-| 12:50 | Track 5 | sel-ind210 | [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps |
-| 12:50 | Track 6 | sel-ind224 | [Config] 피지컬 AI 기업 Config의 AWS 기반 Robotics Foundation Model 개발 여정 |
-| 12:50 | Track 7 | sel-ind302 | [CJ ENM Mnet Plus] K-POP 글로벌 라이브: Mnet+ 4K와 AI 자막 |
-| 12:50 | Track 8 | sel-ind204 | [놀유니버스] AWS Transform을 통한 놀유니버스의 .NET 현대화 |
-| 12:50 | Track 9 | sel-wps103 | [국가인공지능전략위원회 I KIM & CHANG I LIG D&A] 국방 AX: AI와 클라우드로 재편되는 미래 전쟁 구조 |
-| 13:50 | Track 1 | sel-prt214-s | 책임감 없는 AI에이전트, 주인은 누구인가 (sponsored by Datadog) |
-| 13:50 | Track 2 | sel-prt303-s | LLM and Agent Workloads with DRA GPU를 더 잘게, 더 똑똑하게 — DRAmatic하게(sponsored by GS네오텍) |
-| 13:50 | Track 3 | sel-prt205-s | 생성형 AI의 신뢰성 확보 전략: 매경AX의 환각 통제 사례 (sponsored by 스마일샤크, SmileShark) |
-| 13:50 | Track 4 | sel-prt219-s | 에이전트의 진화 (sponsored by Anthropic) |
-| 13:50 | Track 5 | sel-prt208-s | 다운타임 0의 도전: Agentic AI와 Bedrock으로 완성하는 자율 예지정비 (sponsored by (주)두산 디지털이노베이션BU, Doosan Corporation Digital Innovation BU) |
-| 13:50 | Track 6 | sel-prt304-s | Agentic 시대에 필요한 machine data 관리 전략 (sponsored by Splunk) |
-| 13:50 | Track 7 | sel-prt218-s | VMware 종속을 넘어 자율로, 삼성SDS와 함께하는 AX 전략 (sponsored by Samsung SDS) |
-| 13:50 | Track 8 | sel-prt107-s | AWS All-in 마이그레이션으로 실현한 SM하이플러스의 AI 모빌리티 전략 (sponsored by NDS) |
-| 13:50 | Track 9 | sel-wps102 | 중앙대의료원_의료진이 직접 만드는 의료 AI |
-| 14:30 | Track 1 | sel-ind227 | [GS 칼텍스] 현장이 만드는 AI 혁신: GS칼텍스의 제조 AI 전환 여정 |
-| 14:30 | Track 2 | sel-ind304 | 당근의 CloudHSM/KMS기반 대규모 서명키관리 시스템구축기 |
-| 14:30 | Track 3 | sel-ind207 | [현대카드] 현대카드 데이터 사이언스 플랫폼 진화 여정: Hybrid to Coding 에이전트 |
-| 14:30 | Track 4 | sel-ind211 | [바비톡] 바비톡의 AX여정: 에이전틱 AI로 K-beauty를 바꾸다 |
-| 14:30 | Track 5 | sel-ind217 | LG전자, 에이전틱 AI 기반 멀티에이전트 플랫폼 구축을 통한 업무혁신 |
-| 14:30 | Track 6 | sel-ind230 | [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현 |
-| 14:30 | Track 7 | sel-ind303 | LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정 |
-| 14:30 | Track 8 | sel-ind222 | [하나투어 I AK아이에스] AI가 바꾸는 여행 산업의 무대 뒤: 하나투어, 제주항공의 업무혁신 |
-| 14:30 | Track 9 | sel-wps101 | 룰루메딕 의료마이데이터 플랫폼 혁신사례 |
-| 15:30 | Track 1 | sel-prt401-s | 복잡함 속의 질서 : Beyond AI Adoption in Agentic Era (sponsored by 메가존클라우드, MegazoneCloud) |
-| 15:30 | Track 2 | sel-ind232 | [현대지에프홀딩스] SMUS 기반 전사 MLOps 플랫폼으로 실현한 데이터 혁명 |
-| 15:30 | Track 3 | sel-ind235 | [퀀팃] 퀀트 개발 혁신: Bedrock 기반 자율형 AI 알파 팩토리 |
-| 15:30 | Track 4 | sel-ind214 | [요기요] 요기요의 AIOps: SRE 운영의 콘솔 탈출기 |
-| 15:30 | Track 5 | sel-prt101-s | The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠, Dataiku) |
-| 15:30 | Track 6 | sel-prt105-s | AI ‘개발’에서 ‘운영’으로: 엔터프라이즈 AI 전환 (sponsored by 베스핀글로벌 / BESPIN GLOBAL) |
-| 15:30 | Track 7 | sel-prt211-s | AI 컨시어지: 기억하는 AI가 만드는 다음 세대 고객 경험 (sponsored by 센드버드 / Sendbird) |
-| 15:30 | Track 8 | sel-prt209-s | 에버랜드의 VMware에서 Nutanix 클라우드 클러스터로 마이그레이션 여정 (sponsored by Nutanix) |
-| 16:10 | Track 1 | sel-ind201 | [삼성전자 I 우아한형제들 I TwelveLabs] 혁신가와 리더의 대담 - AI로 이끄는 비즈니스 혁신 |
-| 16:10 | Track 2 | sel-ind229 | [롯데백화점] AI로 잇는 쇼핑 경험: 롯데백화점의 AI 에이전트 구축기 |
-| 16:10 | Track 3 | sel-ind209 | [빗썸] 빗썸은 생성형 AI를 어떻게 안전하게 운영하는가: Claude Code on Amazon Bedrock |
-| 16:10 | Track 5 | sel-ind221 | [SK인텔릭스] SK인텔릭스가 구현하는 에이전틱 AI Robotics의 미래 |
-| 16:10 | Track 6 | sel-ind231 | [바이프로스트 I 스트라드비젼] 피지컬 AI 학습을 위한 데이터 전략: 실 데이터와 합성 데이터로 Sim-to-Real 가속화 |
-| 16:10 | Track 7 | sel-ind301 | [넥슨코리아] 새벽 3시, 18만 개의 모델이 대신 판단한다 : 넥슨의 에이전틱 Ops |
-| 16:10 | Track 8 | sel-ind205 | [마이리얼트립] 마이리얼트립의 AI 네이티브 소수정예 팀: 일하는 방식의 재정의 |
-| 16:10 | Track 9 | sel-wps201 | 규제 환경에서의 통제 가능한 AI 에이전트 아키텍처 |
-| 16:10 | Track 4 | sel-ind215 | [야놀자] Multi-Agent로 AIOps를 혁신하다: 야놀자의 Bedrock AgentCore 구축 사례 |
+| 09:30 | Keynote | sel-key001 | [기조연설 - Industry Day](sessions/industry_day/sel-key001.md) |
+| 11:10 | Track 1 | sel-ind226 | [Amazon's AI Strategy](sessions/industry_day/sel-ind226.md) |
+| 11:10 | Track 2 | sel-ind234 | [[GS리테일] 숏폼 시대, GS SHOP의 영상기반 AI 상품 추천플랫폼 구축기](sessions/industry_day/sel-ind234.md) |
+| 11:10 | Track 3 | sel-ind208 | [[KB국민은행] KBaaS, 금융이 플랫폼 속으로 : KB국민은행의 임베디드 금융 전략과 API 인프라 현대화](sessions/industry_day/sel-ind208.md) |
+| 11:10 | Track 4 | sel-ind213 | [[웅진씽크빅] 웅진씽크빅의 AI-DLC를 활용한 교육자용 AI 에이전트 구축기](sessions/industry_day/sel-ind213.md) |
+| 11:10 | Track 5 | sel-ind216 | [[현대자동차] 현대자동차의 AI 기반 마켓인텔리전스 혁신 (AI for MI)](sessions/industry_day/sel-ind216.md) |
+| 11:10 | Track 6 | sel-ind105 | [AWS 피지컬 AI로 실현하는 기업의 차세대 혁신 전략](sessions/industry_day/sel-ind105.md) |
+| 11:10 | Track 7 | sel-ind228 | [[SK텔레콤] SK텔레콤, 이제는 AI에게 필요한 데이터 플랫폼으로](sessions/industry_day/sel-ind228.md) |
+| 11:10 | Track 8 | sel-ind203 | [[여기어때컴퍼니] Kiro CLI로 실현한 여기어때의 데이터베이스 현대화](sessions/industry_day/sel-ind203.md) |
+| 11:10 | Track 9 | sel-wps105 | [[정보통신산업진흥원] AI G3 코리아: NIPA와 AWS가 만드는 공공 혁신](sessions/industry_day/sel-wps105.md) |
+| 12:50 | Track 1 | sel-ind225 | [[삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정](sessions/industry_day/sel-ind225.md) |
+| 12:50 | Track 2 | sel-ind233 | [[AMOREPACIFIC] AMOREPACIFIC의 AWS 기반 AI뷰티테크 플랫폼 서비스](sessions/industry_day/sel-ind233.md) |
+| 12:50 | Track 3 | sel-ind206 | [[미래에셋증권] Convert To AI-Ready Data 미래에셋증권의 GraphRAG 기반 상품지식DB 구축기](sessions/industry_day/sel-ind206.md) |
+| 12:50 | Track 4 | sel-ind212 | [[AB180] AB180이 SaaS 에이전틱 AI를 설계하는 방법](sessions/industry_day/sel-ind212.md) |
+| 12:50 | Track 5 | sel-ind210 | [[포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps](sessions/industry_day/sel-ind210.md) |
+| 12:50 | Track 6 | sel-ind224 | [[Config] 피지컬 AI 기업 Config의 AWS 기반 Robotics Foundation Model 개발 여정](sessions/industry_day/sel-ind224.md) |
+| 12:50 | Track 7 | sel-ind302 | [[CJ ENM Mnet Plus] K-POP 글로벌 라이브: Mnet+ 4K와 AI 자막](sessions/industry_day/sel-ind302.md) |
+| 12:50 | Track 8 | sel-ind204 | [[놀유니버스] AWS Transform을 통한 놀유니버스의 .NET 현대화](sessions/industry_day/sel-ind204.md) |
+| 12:50 | Track 9 | sel-wps103 | [[국가인공지능전략위원회 I KIM & CHANG I LIG D&A] 국방 AX: AI와 클라우드로 재편되는 미래 전쟁 구조](sessions/industry_day/sel-wps103.md) |
+| 13:50 | Track 1 | sel-prt214-s | [책임감 없는 AI에이전트, 주인은 누구인가 (sponsored by Datadog)](sessions/industry_day/sel-prt214-s.md) |
+| 13:50 | Track 2 | sel-prt303-s | [LLM and Agent Workloads with DRA GPU를 더 잘게, 더 똑똑하게 — DRAmatic하게(sponsored by GS네오텍)](sessions/industry_day/sel-prt303-s.md) |
+| 13:50 | Track 3 | sel-prt205-s | [생성형 AI의 신뢰성 확보 전략: 매경AX의 환각 통제 사례 (sponsored by 스마일샤크, SmileShark)](sessions/industry_day/sel-prt205-s.md) |
+| 13:50 | Track 4 | sel-prt219-s | [에이전트의 진화 (sponsored by Anthropic)](sessions/industry_day/sel-prt219-s.md) |
+| 13:50 | Track 5 | sel-prt208-s | [다운타임 0의 도전: Agentic AI와 Bedrock으로 완성하는 자율 예지정비 (sponsored by (주)두산 디지털이노베이션BU, Doosan Corporation Digital Innovation BU)](sessions/industry_day/sel-prt208-s.md) |
+| 13:50 | Track 6 | sel-prt304-s | [Agentic 시대에 필요한 machine data 관리 전략 (sponsored by Splunk)](sessions/industry_day/sel-prt304-s.md) |
+| 13:50 | Track 7 | sel-prt218-s | [VMware 종속을 넘어 자율로, 삼성SDS와 함께하는 AX 전략 (sponsored by Samsung SDS)](sessions/industry_day/sel-prt218-s.md) |
+| 13:50 | Track 8 | sel-prt107-s | [AWS All-in 마이그레이션으로 실현한 SM하이플러스의 AI 모빌리티 전략 (sponsored by NDS)](sessions/industry_day/sel-prt107-s.md) |
+| 13:50 | Track 9 | sel-wps102 | [중앙대의료원_의료진이 직접 만드는 의료 AI](sessions/industry_day/sel-wps102.md) |
+| 14:30 | Track 1 | sel-ind227 | [[GS 칼텍스] 현장이 만드는 AI 혁신: GS칼텍스의 제조 AI 전환 여정](sessions/industry_day/sel-ind227.md) |
+| 14:30 | Track 2 | sel-ind304 | [당근의 CloudHSM/KMS기반 대규모 서명키관리 시스템구축기](sessions/industry_day/sel-ind304.md) |
+| 14:30 | Track 3 | sel-ind207 | [[현대카드] 현대카드 데이터 사이언스 플랫폼 진화 여정: Hybrid to Coding 에이전트](sessions/industry_day/sel-ind207.md) |
+| 14:30 | Track 4 | sel-ind211 | [[바비톡] 바비톡의 AX여정: 에이전틱 AI로 K-beauty를 바꾸다](sessions/industry_day/sel-ind211.md) |
+| 14:30 | Track 5 | sel-ind217 | [LG전자, 에이전틱 AI 기반 멀티에이전트 플랫폼 구축을 통한 업무혁신](sessions/industry_day/sel-ind217.md) |
+| 14:30 | Track 6 | sel-ind230 | [[위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현](sessions/industry_day/sel-ind230.md) |
+| 14:30 | Track 7 | sel-ind303 | [LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정](sessions/industry_day/sel-ind303.md) |
+| 14:30 | Track 8 | sel-ind222 | [[하나투어 I AK아이에스] AI가 바꾸는 여행 산업의 무대 뒤: 하나투어, 제주항공의 업무혁신](sessions/industry_day/sel-ind222.md) |
+| 14:30 | Track 9 | sel-wps101 | [룰루메딕 의료마이데이터 플랫폼 혁신사례](sessions/industry_day/sel-wps101.md) |
+| 15:30 | Track 1 | sel-prt401-s | [복잡함 속의 질서 : Beyond AI Adoption in Agentic Era (sponsored by 메가존클라우드, MegazoneCloud)](sessions/industry_day/sel-prt401-s.md) |
+| 15:30 | Track 2 | sel-ind232 | [[현대지에프홀딩스] SMUS 기반 전사 MLOps 플랫폼으로 실현한 데이터 혁명](sessions/industry_day/sel-ind232.md) |
+| 15:30 | Track 3 | sel-ind235 | [[퀀팃] 퀀트 개발 혁신: Bedrock 기반 자율형 AI 알파 팩토리](sessions/industry_day/sel-ind235.md) |
+| 15:30 | Track 4 | sel-ind214 | [[요기요] 요기요의 AIOps: SRE 운영의 콘솔 탈출기](sessions/industry_day/sel-ind214.md) |
+| 15:30 | Track 5 | sel-prt101-s | [The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠, Dataiku)](sessions/industry_day/sel-prt101-s.md) |
+| 15:30 | Track 6 | sel-prt105-s | [AI ‘개발’에서 ‘운영’으로: 엔터프라이즈 AI 전환 (sponsored by 베스핀글로벌 / BESPIN GLOBAL)](sessions/industry_day/sel-prt105-s.md) |
+| 15:30 | Track 7 | sel-prt211-s | [AI 컨시어지: 기억하는 AI가 만드는 다음 세대 고객 경험 (sponsored by 센드버드 / Sendbird)](sessions/industry_day/sel-prt211-s.md) |
+| 15:30 | Track 8 | sel-prt209-s | [에버랜드의 VMware에서 Nutanix 클라우드 클러스터로 마이그레이션 여정 (sponsored by Nutanix)](sessions/industry_day/sel-prt209-s.md) |
+| 16:10 | Track 1 | sel-ind201 | [[삼성전자 I 우아한형제들 I TwelveLabs] 혁신가와 리더의 대담 - AI로 이끄는 비즈니스 혁신](sessions/industry_day/sel-ind201.md) |
+| 16:10 | Track 2 | sel-ind229 | [[롯데백화점] AI로 잇는 쇼핑 경험: 롯데백화점의 AI 에이전트 구축기](sessions/industry_day/sel-ind229.md) |
+| 16:10 | Track 3 | sel-ind209 | [[빗썸] 빗썸은 생성형 AI를 어떻게 안전하게 운영하는가: Claude Code on Amazon Bedrock](sessions/industry_day/sel-ind209.md) |
+| 16:10 | Track 5 | sel-ind221 | [[SK인텔릭스] SK인텔릭스가 구현하는 에이전틱 AI Robotics의 미래](sessions/industry_day/sel-ind221.md) |
+| 16:10 | Track 6 | sel-ind231 | [[바이프로스트 I 스트라드비젼] 피지컬 AI 학습을 위한 데이터 전략: 실 데이터와 합성 데이터로 Sim-to-Real 가속화](sessions/industry_day/sel-ind231.md) |
+| 16:10 | Track 7 | sel-ind301 | [[넥슨코리아] 새벽 3시, 18만 개의 모델이 대신 판단한다 : 넥슨의 에이전틱 Ops](sessions/industry_day/sel-ind301.md) |
+| 16:10 | Track 8 | sel-ind205 | [[마이리얼트립] 마이리얼트립의 AI 네이티브 소수정예 팀: 일하는 방식의 재정의](sessions/industry_day/sel-ind205.md) |
+| 16:10 | Track 9 | sel-wps201 | [규제 환경에서의 통제 가능한 AI 에이전트 아키텍처](sessions/industry_day/sel-wps201.md) |
+| 16:10 | Track 4 | sel-ind215 | [[야놀자] Multi-Agent로 AIOps를 혁신하다: 야놀자의 Bedrock AgentCore 구축 사례](sessions/industry_day/sel-ind215.md) |
 
 ## 세션별 요약
 
-# AWS Summit Seoul 2026 Industry Day - Batch 1 Summaries
+## sel-key001 - 기조연설 - Industry Day
 
-## sel-key001
+[개별 세션 문서](sessions/industry_day/sel-key001.md)
 
 - 제목: 기조연설 - Industry Day
 - 시간: 2026-05-20 09:30-10:40 KST
@@ -107,7 +92,9 @@ Industry Day 기조연설은 아이디어를 실제 비즈니스 성과로 바�
 ### 블로그용 한줄
 > AWS Summit Seoul 2026 Industry Day의 기조연설은 AI를 아이디어에서 운영 가능한 혁신으로 옮기는 AWS의 큰 전략 지도를 제시했다.
 
-## sel-ind226
+## sel-ind226 - Amazon's AI Strategy
+
+[개별 세션 문서](sessions/industry_day/sel-ind226.md)
 
 - 제목: Amazon's AI Strategy
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -133,7 +120,9 @@ Industry Day 기조연설은 아이디어를 실제 비즈니스 성과로 바�
 ### 블로그용 한줄
 > Amazon의 AI 전략은 거대한 AI 비전을 말하기보다 쇼핑, 셀러, 물류 현장의 반복 문제를 AI 서비스로 제품화한 실행 사례에 가까웠다.
 
-## sel-ind234
+## sel-ind234 - [GS리테일] 숏폼 시대, GS SHOP의 영상기반 AI 상품 추천플랫폼 구축기
+
+[개별 세션 문서](sessions/industry_day/sel-ind234.md)
 
 - 제목: [GS리테일] 숏폼 시대, GS SHOP의 영상기반 AI 상품 추천플랫폼 구축기
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -159,7 +148,13 @@ GS SHOP은 텍스트와 메타데이터 중심 추천만으로는 숏폼, 라이
 ### 블로그용 한줄
 > GS SHOP은 상품 영상을 단순 콘텐츠가 아니라 고객 취향을 읽는 추천 신호로 바꾸며 숏폼 시대의 커머스 AI 방향을 보여줬다.
 
-## sel-ind208
+### 직접 들은 뒤 메모
+
+GS SHOP 세션은 AX를 추상적인 생산성 향상 구호가 아니라 실제 추천 품질을 올리는 데이터 파이프라인으로 풀어낸 점이 좋았다. 숏폼 영상에서 상품, 장면, 스타일, 분위기, 구매 신호를 뽑아내고 이를 추천에 다시 연결하는 방식은 카카오페이에서도 금융 상품, 혜택, 이벤트, 콘텐츠 추천을 고도화할 때 참고할 만하다. 특히 핀테크에서는 추천이 곧 신뢰 문제와 연결되기 때문에, AI가 만든 태그와 설명을 그대로 쓰기보다 검증 가능한 메타데이터로 축적하고 추천 근거를 남기는 구조가 중요하다고 느꼈다.
+
+## sel-ind208 - [KB국민은행] KBaaS, 금융이 플랫폼 속으로 : KB국민은행의 임베디드 금융 전략과 API 인프라 현대화
+
+[개별 세션 문서](sessions/industry_day/sel-ind208.md)
 
 - 제목: [KB국민은행] KBaaS, 금융이 플랫폼 속으로 : KB국민은행의 임베디드 금융 전략과 API 인프라 현대화
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -185,7 +180,9 @@ KB국민은행은 금융 기능이 비금융 플랫폼 안에서 API 형태로 �
 ### 블로그용 한줄
 > KB국민은행의 KBaaS 사례는 금융사가 API 인프라를 제품처럼 운영해야 하는 시대가 왔음을 보여줬다.
 
-## sel-ind213
+## sel-ind213 - [웅진씽크빅] 웅진씽크빅의 AI-DLC를 활용한 교육자용 AI 에이전트 구축기
+
+[개별 세션 문서](sessions/industry_day/sel-ind213.md)
 
 - 제목: [웅진씽크빅] 웅진씽크빅의 AI-DLC를 활용한 교육자용 AI 에이전트 구축기
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -211,7 +208,9 @@ KB국민은행은 금융 기능이 비금융 플랫폼 안에서 API 형태로 �
 ### 블로그용 한줄
 > 웅진씽크빅은 Kiro와 AI-DLC를 활용해 교육 현장의 반복 업무를 AI 에이전트와 사람의 검토 체계가 함께 처리하는 방식으로 바꿨다.
 
-## sel-ind216
+## sel-ind216 - [현대자동차] 현대자동차의 AI 기반 마켓인텔리전스 혁신 (AI for MI)
+
+[개별 세션 문서](sessions/industry_day/sel-ind216.md)
 
 - 제목: [현대자동차] 현대자동차의 AI 기반 마켓인텔리전스 혁신 (AI for MI)
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -237,7 +236,9 @@ KB국민은행은 금융 기능이 비금융 플랫폼 안에서 API 형태로 �
 ### 블로그용 한줄
 > 현대자동차는 AI for MI로 글로벌 시장 정보를 실시간에 가깝게 읽고 상품 전략으로 연결하는 마켓 인텔리전스 체계를 만들고 있다.
 
-## sel-ind105
+## sel-ind105 - AWS 피지컬 AI로 실현하는 기업의 차세대 혁신 전략
+
+[개별 세션 문서](sessions/industry_day/sel-ind105.md)
 
 - 제목: AWS 피지컬 AI로 실현하는 기업의 차세대 혁신 전략
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -263,7 +264,9 @@ KB국민은행은 금융 기능이 비금융 플랫폼 안에서 API 형태로 �
 ### 블로그용 한줄
 > AWS 피지컬 AI 전략은 디지털 트윈과 클라우드 시뮬레이션을 엣지의 자율 행동으로 연결해 제조와 로보틱스 혁신을 가속한다.
 
-## sel-ind228
+## sel-ind228 - [SK텔레콤] SK텔레콤, 이제는 AI에게 필요한 데이터 플랫폼으로
+
+[개별 세션 문서](sessions/industry_day/sel-ind228.md)
 
 - 제목: [SK텔레콤] SK텔레콤, 이제는 AI에게 필요한 데이터 플랫폼으로
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -289,7 +292,9 @@ SK텔레콤 세션은 기존 데이터 플랫폼이 사람을 위한 분석 환�
 ### 블로그용 한줄
 > SK텔레콤은 SageMaker Unified Studio를 중심으로 데이터, 메타데이터, AI 자산을 연결해 AI가 바로 활용할 수 있는 데이터 플랫폼으로 전환하고 있다.
 
-## sel-ind203
+## sel-ind203 - [여기어때컴퍼니] Kiro CLI로 실현한 여기어때의 데이터베이스 현대화
+
+[개별 세션 문서](sessions/industry_day/sel-ind203.md)
 
 - 제목: [여기어때컴퍼니] Kiro CLI로 실현한 여기어때의 데이터베이스 현대화
 - 시간: 2026-05-20 11:10-11:50 KST
@@ -315,11 +320,12 @@ SK텔레콤 세션은 기존 데이터 플랫폼이 사람을 위한 분석 환�
 ### 블로그용 한줄
 > 여기어때는 Kiro CLI와 AWS의 DB 현대화 접근을 활용해 1년 이상 걸릴 수 있던 Oracle to Aurora MySQL 전환을 6주 프로젝트로 압축했다.
 
-# AWS Summit Seoul 2026 Industry Day - Batch 2 Summaries
 
 > Worker 2 assigned sessions: sel-wps105, sel-ind225, sel-ind233, sel-ind206, sel-ind212, sel-ind210, sel-ind224, sel-ind302, sel-ind204. All summaries below are based on generated VOD transcripts plus official session metadata.
 
-## sel-wps105
+## sel-wps105 - [정보통신산업진흥원] AI G3 코리아: NIPA와 AWS가 만드는 공공 혁신
+
+[개별 세션 문서](sessions/industry_day/sel-wps105.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [정보통신산업진흥원] AI G3 코리아: NIPA와 AWS가 만드는 공공 혁신
@@ -346,7 +352,9 @@ NIPA 발표는 특정 서비스 데모보다 정책·예산·생태계 방향성
 **블로그용 한줄**  
 NIPA는 AI 인프라, 반도체, 피지컬 AI, 글로벌 실증을 묶어 대한민국 AI G3 전략을 실행 가능한 공공 AX 로드맵으로 제시했다.
 
-## sel-ind225
+## sel-ind225 - [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정
+
+[개별 세션 문서](sessions/industry_day/sel-ind225.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정
@@ -373,7 +381,9 @@ Amazon EKS, Amazon Bedrock AgentCore, Amazon Q, Kiro, AIOps, SecOps, FinOps, WAF
 **블로그용 한줄**  
 삼성전자는 에이전틱 AI를 개발 생산성 도구가 아니라 AIOps와 거버넌스를 포함한 엔터프라이즈 운영 체계로 확장하고 있다.
 
-## sel-ind233
+## sel-ind233 - [AMOREPACIFIC] AMOREPACIFIC의 AWS 기반 AI뷰티테크 플랫폼 서비스
+
+[개별 세션 문서](sessions/industry_day/sel-ind233.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [AMOREPACIFIC] AMOREPACIFIC의 AWS 기반 AI뷰티테크 플랫폼 서비스
@@ -400,7 +410,9 @@ Amazon EKS, Amazon SageMaker, Amazon Bedrock AgentCore, AI Beauty Tech, Beauty C
 **블로그용 한줄**  
 아모레퍼시픽은 AWS 기반 진단 플랫폼으로 뷰티 카운슬러의 경험을 표준화하고, AI 뷰티테크를 서비스형 플랫폼으로 확장하고 있다.
 
-## sel-ind206
+## sel-ind206 - [미래에셋증권] Convert To AI-Ready Data 미래에셋증권의 GraphRAG 기반 상품지식DB 구축기
+
+[개별 세션 문서](sessions/industry_day/sel-ind206.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [미래에셋증권] Convert To AI-Ready Data 미래에셋증권의 GraphRAG 기반 상품지식DB 구축기
@@ -427,7 +439,9 @@ GraphRAG, Knowledge Graph, Ontology, Amazon Neptune, Amazon Bedrock Knowledge Ba
 **블로그용 한줄**  
 미래에셋증권은 상품 데이터를 그래프로 재구성해 금융 AI 검색의 정확도와 설명 가능성을 높이는 GraphRAG 접근을 보여줬다.
 
-## sel-ind212
+## sel-ind212 - [AB180] AB180이 SaaS 에이전틱 AI를 설계하는 방법
+
+[개별 세션 문서](sessions/industry_day/sel-ind212.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [AB180] AB180이 SaaS 에이전틱 AI를 설계하는 방법
@@ -454,7 +468,9 @@ AB180 사례는 SaaS의 사용 경험이 "사용자가 화면을 조작"하는 �
 **블로그용 한줄**  
 AB180은 Bedrock AgentCore와 MCP를 활용해 RAG 챗봇을 실제 마케팅 업무를 수행하는 SaaS 에이전트로 발전시키고 있다.
 
-## sel-ind210
+## sel-ind210 - [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps
+
+[개별 세션 문서](sessions/industry_day/sel-ind210.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps
@@ -481,7 +497,9 @@ AWS Kiro, Amazon SageMaker, SageMaker MLOps, SageMaker Model Monitor, 예지정�
 **블로그용 한줄**  
 포스코는 Kiro와 SageMaker MLOps를 결합해 제철소 예지정비 모델 개발을 현장 주도형 AI 운영 체계로 전환했다.
 
-## sel-ind224
+## sel-ind224 - [Config] 피지컬 AI 기업 Config의 AWS 기반 Robotics Foundation Model 개발 여정
+
+[개별 세션 문서](sessions/industry_day/sel-ind224.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [Config] 피지컬 AI 기업 Config의 AWS 기반 Robotics Foundation Model 개발 여정
@@ -508,7 +526,9 @@ Robotics Foundation Model, VLA, Physical AI, AWS Direct Connect, Amazon S3, Amaz
 **블로그용 한줄**  
 Config는 자체 액션 데이터 생산 체계와 AWS 기반 데이터·학습 인프라를 결합해 로봇 파운데이션 모델을 만들고 있다.
 
-## sel-ind302
+## sel-ind302 - [CJ ENM Mnet Plus] K-POP 글로벌 라이브: Mnet+ 4K와 AI 자막
+
+[개별 세션 문서](sessions/industry_day/sel-ind302.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [CJ ENM Mnet Plus] K-POP 글로벌 라이브: Mnet+ 4K와 AI 자막
@@ -535,7 +555,13 @@ Mnet Plus 사례는 미디어 아키텍처와 생성형 AI가 같은 운영 문�
 **블로그용 한줄**  
 Mnet Plus는 멀티 리전 라이브 스트리밍과 Bedrock 기반 AI 자막을 결합해 글로벌 K-POP 팬에게 4K 라이브 경험을 제공했다.
 
-## sel-ind204
+### 직접 들은 뒤 메모
+
+K-POP 글로벌 라이브 세션은 대규모 실시간 트래픽과 AI 자막을 함께 운영한 사례라 인상적이었다. 금융 서비스에서도 이벤트성 트래픽, 대규모 알림, 실시간 상담, 장애 상황 공지처럼 순간적으로 부하가 몰리는 흐름이 있다. 카카오페이 관점에서는 AI 기능 자체보다 멀티 리전, 장애 전환, 비용 통제, 품질 폴백까지 포함한 운영 설계가 더 크게 다가왔다. AI 자막도 단순 번역이 아니라 도메인 맥락과 출력 규칙을 넣어 품질을 잡았는데, 금융 약관이나 고객 안내 문구에도 같은 접근이 필요하다.
+
+## sel-ind204 - [놀유니버스] AWS Transform을 통한 놀유니버스의 .NET 현대화
+
+[개별 세션 문서](sessions/industry_day/sel-ind204.md)
 
 **Title/Time/Track/Speakers**  
 - 제목: [놀유니버스] AWS Transform을 통한 놀유니버스의 .NET 현대화
@@ -562,13 +588,14 @@ AWS Transform for .NET, Kiro, .NET Framework Modernization, Containers, Amazon C
 **블로그용 한줄**  
 놀유니버스는 AWS Transform for .NET과 Kiro로 28년 레거시를 분석·전환·검증하며 .NET 현대화의 실행 속도를 끌어올렸다.
 
-# AWS Summit Seoul 2026 Industry Day - Batch 3
 
 담당 세션: `sel-wps103`, `sel-prt214-s`, `sel-prt303-s`, `sel-prt205-s`, `sel-prt219-s`, `sel-prt208-s`, `sel-prt304-s`, `sel-prt218-s`, `sel-prt107-s`
 
 모든 세션은 helper script로 생성한 VOD 전사본을 기반으로 요약했습니다. 전사 품질상 일부 고유명사/제품명은 공식 세션 메타데이터와 대조해 보정했습니다.
 
-## sel-wps103
+## sel-wps103 - [국가인공지능전략위원회 I KIM & CHANG I LIG D&A] 국방 AX: AI와 클라우드로 재편되는 미래 전쟁 구조
+
+[개별 세션 문서](sessions/industry_day/sel-wps103.md)
 
 - 제목: [국가인공지능전략위원회 I KIM & CHANG I LIG D&A] 국방 AX: AI와 클라우드로 재편되는 미래 전쟁 구조
 - 시간: 2026-05-20 12:50-13:30 KST
@@ -599,7 +626,9 @@ AWS 클라우드, 국방 AX, Project Maven, Palantir, Anthropic, 피지컬 AI, C
 
 미래 전장은 무기보다 데이터, AI, 클라우드를 얼마나 빠르고 안전하게 통제하느냐의 경쟁으로 재편되고 있다.
 
-## sel-prt214-s
+## sel-prt214-s - 책임감 없는 AI에이전트, 주인은 누구인가 (sponsored by Datadog)
+
+[개별 세션 문서](sessions/industry_day/sel-prt214-s.md)
 
 - 제목: 책임감 없는 AI에이전트, 주인은 누구인가 (sponsored by Datadog)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -630,7 +659,9 @@ AI 에이전트 도입의 관건은 "무엇을 할 수 있느냐"보다 "무엇�
 
 AI 에이전트의 주인은 모델이 아니라, 액션과 책임을 설계하는 사람과 조직이다.
 
-## sel-prt303-s
+## sel-prt303-s - LLM and Agent Workloads with DRA GPU를 더 잘게, 더 똑똑하게 — DRAmatic하게(sponsored by GS네오텍)
+
+[개별 세션 문서](sessions/industry_day/sel-prt303-s.md)
 
 - 제목: LLM and Agent Workloads with DRA GPU를 더 잘게, 더 똑똑하게 - DRAmatic하게 (sponsored by GS네오텍)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -661,7 +692,9 @@ GPU 최적화는 "더 많이"가 아니라 "필요한 속성의 GPU를 필요한
 
 LLM/에이전트 시대의 GPU 운영은 카드 수가 아니라 워크로드 요구 조건을 코드로 선언하는 능력에서 갈린다.
 
-## sel-prt205-s
+## sel-prt205-s - 생성형 AI의 신뢰성 확보 전략: 매경AX의 환각 통제 사례 (sponsored by 스마일샤크, SmileShark)
+
+[개별 세션 문서](sessions/industry_day/sel-prt205-s.md)
 
 - 제목: 생성형 AI의 신뢰성 확보 전략: 매경AX의 환각 통제 사례 (sponsored by 스마일샤크, SmileShark)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -692,7 +725,9 @@ Amazon Bedrock, AWS Step Functions, LLM-as-a-Judge, Claude, Cross-model Evaluati
 
 생성형 AI 품질은 모델이 만든 답을 또 다른 모델과 사람이 함께 검증하는 운영 루프에서 나온다.
 
-## sel-prt219-s
+## sel-prt219-s - 에이전트의 진화 (sponsored by Anthropic)
+
+[개별 세션 문서](sessions/industry_day/sel-prt219-s.md)
 
 - 제목: 에이전트의 진화 (sponsored by Anthropic)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -723,7 +758,9 @@ Claude, Claude Code, AI Agent, Planning, Action, Reflection, Tool Use, Desktop A
 
 LLM은 답변하는 도구에서 계획하고 실행하고 되돌아보는 동료형 소프트웨어로 진화하고 있다.
 
-## sel-prt208-s
+## sel-prt208-s - 다운타임 0의 도전: Agentic AI와 Bedrock으로 완성하는 자율 예지정비 (sponsored by (주)두산 디지털이노베이션BU, Doosan Corporation Digital Innovation BU)
+
+[개별 세션 문서](sessions/industry_day/sel-prt208-s.md)
 
 - 제목: 다운타임 0의 도전: Agentic AI와 Bedrock으로 완성하는 자율 예지정비 (sponsored by 두산 디지털이노베이션BU)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -754,7 +791,9 @@ Amazon Bedrock, AWS IoT Core, Amazon S3, Agentic AI, Predictive Maintenance, ISO
 
 예지정비의 다음 단계는 고정 룰을 넘어, 설비 데이터로 스스로 개선안을 제안하는 Agentic AI 루프다.
 
-## sel-prt304-s
+## sel-prt304-s - Agentic 시대에 필요한 machine data 관리 전략 (sponsored by Splunk)
+
+[개별 세션 문서](sessions/industry_day/sel-prt304-s.md)
 
 - 제목: Agentic 시대에 필요한 machine data 관리 전략 (sponsored by Splunk)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -785,7 +824,9 @@ Agentic AI를 운영에 쓰려면 먼저 데이터 통합과 관찰 가능성이
 
 에이전트 시대의 숨은 인프라는 GPU가 아니라 로그, 메트릭, 트레이스를 연결하는 machine data 전략이다.
 
-## sel-prt218-s
+## sel-prt218-s - VMware 종속을 넘어 자율로, 삼성SDS와 함께하는 AX 전략 (sponsored by Samsung SDS)
+
+[개별 세션 문서](sessions/industry_day/sel-prt218-s.md)
 
 - 제목: VMware 종속을 넘어 자율로, 삼성SDS와 함께하는 AX 전략 (sponsored by Samsung SDS)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -816,7 +857,9 @@ VMware 대안 논의는 "탈 VMware" 자체보다 안정적 전환과 AI 네이�
 
 AX 인프라 전략은 VMware를 벗어나는 문제가 아니라 안정성과 AI 확장성을 동시에 확보하는 전환 설계의 문제다.
 
-## sel-prt107-s
+## sel-prt107-s - AWS All-in 마이그레이션으로 실현한 SM하이플러스의 AI 모빌리티 전략 (sponsored by NDS)
+
+[개별 세션 문서](sessions/industry_day/sel-prt107-s.md)
 
 - 제목: AWS All-in 마이그레이션으로 실현한 SM하이플러스의 AI 모빌리티 전략 (sponsored by NDS)
 - 시간: 2026-05-20 13:50-14:10 KST
@@ -847,11 +890,12 @@ AWS All-in Migration, Amazon Aurora PostgreSQL, Amazon RDS for Oracle 19c, AWS D
 
 SM하이플러스의 AWS All-in 마이그레이션은 레거시 비용 절감에서 출발해 AI 모빌리티 플랫폼의 데이터 기반으로 이어졌다.
 
-# Batch 4 요약
 
 작성 기준: 아래 9개 세션은 모두 VOD 음성 전사(`--model base`)를 기반으로 정리했다. 전사상 일부 고유명사와 수치에는 음성 인식 오차 가능성이 있어, 공식 메타데이터의 제목/시간/발표자 정보를 함께 대조했다.
 
-## sel-wps102
+## sel-wps102 - 중앙대의료원_의료진이 직접 만드는 의료 AI
+
+[개별 세션 문서](sessions/industry_day/sel-wps102.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: 중앙대의료원_의료진이 직접 만드는 의료 AI
@@ -879,7 +923,9 @@ SM하이플러스의 AWS All-in 마이그레이션은 레거시 비용 절감에
 **블로그용 한줄**
 - “중앙대의료원 사례는 의료 AI의 장벽을 낮추는 가장 현실적인 방법이 현장을 아는 사람이 직접 작은 도구를 만들 수 있게 하는 것임을 보여줬다.”
 
-## sel-ind227
+## sel-ind227 - [GS 칼텍스] 현장이 만드는 AI 혁신: GS칼텍스의 제조 AI 전환 여정
+
+[개별 세션 문서](sessions/industry_day/sel-ind227.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [GS 칼텍스] 현장이 만드는 AI 혁신: GS칼텍스의 제조 AI 전환 여정
@@ -906,7 +952,9 @@ GS칼텍스는 제조 AI 전환을 탑다운 솔루션 도입이 아니라 “�
 **블로그용 한줄**
 - “GS칼텍스는 제조 AI 전환의 핵심을 기술 자체보다 현업이 직접 만들고 리더가 좋은 리스크를 감당하는 문화로 정의했다.”
 
-## sel-ind304
+## sel-ind304 - 당근의 CloudHSM/KMS기반 대규모 서명키관리 시스템구축기
+
+[개별 세션 문서](sessions/industry_day/sel-ind304.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: 당근의 CloudHSM/KMS기반 대규모 서명키관리 시스템구축기
@@ -934,7 +982,9 @@ GS칼텍스는 제조 AI 전환을 탑다운 솔루션 도입이 아니라 “�
 **블로그용 한줄**
 - “당근의 사례는 대규모 인증 시스템에서 CloudHSM과 KMS를 조합하면 보안성과 고가용성을 동시에 잡을 수 있음을 보여줬다.”
 
-## sel-ind207
+## sel-ind207 - [현대카드] 현대카드 데이터 사이언스 플랫폼 진화 여정: Hybrid to Coding 에이전트
+
+[개별 세션 문서](sessions/industry_day/sel-ind207.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [현대카드] 현대카드 데이터 사이언스 플랫폼 진화 여정: Hybrid to Coding 에이전트
@@ -964,7 +1014,9 @@ GS칼텍스는 제조 AI 전환을 탑다운 솔루션 도입이 아니라 “�
 **블로그용 한줄**
 - “현대카드는 하이브리드 데이터 사이언스 플랫폼 위에 금융권 맞춤 코딩 에이전트를 얹어, 규제 환경에서도 ML 개발 생산성을 끌어올리는 길을 보여줬다.”
 
-## sel-ind211
+## sel-ind211 - [바비톡] 바비톡의 AX여정: 에이전틱 AI로 K-beauty를 바꾸다
+
+[개별 세션 문서](sessions/industry_day/sel-ind211.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [바비톡] 바비톡의 AX여정: 에이전틱 AI로 K-beauty를 바꾸다
@@ -994,7 +1046,13 @@ GS칼텍스는 제조 AI 전환을 탑다운 솔루션 도입이 아니라 “�
 **블로그용 한줄**
 - “바비톡은 AI 에이전트를 거창한 플랫폼이 아니라 빠르게 실험하고 검증하며 비즈니스 플라이휠로 키우는 방식으로 접근했다.”
 
-## sel-ind217
+### 직접 들은 뒤 메모
+
+바비톡의 AX 여정은 작게 만들고 빠르게 검증하는 방식이 가장 기억에 남았다. 처음부터 거대한 플랫폼을 만들기보다 리뷰 검수, 검색, 상담, 여행 가이드처럼 실제 고객 문제와 내부 업무 문제를 하나씩 풀어가며 에이전트를 키웠다. 카카오페이에서도 AX TF가 처음부터 완성형 플랫폼을 목표로 잡기보다, 고객센터 상담 보조, 가맹점 문의 분류, 내부 정책 검색, 개발자 업무 보조처럼 효과가 보이는 작은 단위부터 시작하는 것이 현실적이라고 느꼈다.
+
+## sel-ind217 - LG전자, 에이전틱 AI 기반 멀티에이전트 플랫폼 구축을 통한 업무혁신
+
+[개별 세션 문서](sessions/industry_day/sel-ind217.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: LG전자, 에이전틱 AI 기반 멀티에이전트 플랫폼 구축을 통한 업무혁신
@@ -1024,7 +1082,9 @@ LG전자 한국영업본부는 고객 데이터 플랫폼과 대시보드 AI에�
 **블로그용 한줄**
 - “LG전자는 Agent One을 통해 데이터 분석을 넘어 매장 교육, CRM, B2B 도면 업무까지 현업형 멀티 에이전트로 확장하고 있었다.”
 
-## sel-ind230
+## sel-ind230 - [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
+
+[개별 세션 문서](sessions/industry_day/sel-ind230.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
@@ -1054,7 +1114,9 @@ RLWRLD와 위로보틱스는 피지컬 AI에서 로봇 파운데이션 모델과
 **블로그용 한줄**
 - “RLWRLD와 위로보틱스 세션은 피지컬 AI가 거대 모델 학습과 로봇 하드웨어 감각이 만나는 지점에서 현실화되고 있음을 보여줬다.”
 
-## sel-ind303
+## sel-ind303 - LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
+
+[개별 세션 문서](sessions/industry_day/sel-ind303.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
@@ -1084,7 +1146,9 @@ LG U+는 100개 이상의 온프레미스 애플리케이션을 클라우드로 
 **블로그용 한줄**
 - “LG U+는 대규모 마이그레이션을 에이전틱 AI 워크플로로 재구성해, 전환 작업 자체를 조직 학습 시스템으로 바꾸고 있었다.”
 
-## sel-ind222
+## sel-ind222 - [하나투어 I AK아이에스] AI가 바꾸는 여행 산업의 무대 뒤: 하나투어, 제주항공의 업무혁신
+
+[개별 세션 문서](sessions/industry_day/sel-ind222.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [하나투어 I AK아이에스] AI가 바꾸는 여행 산업의 무대 뒤: 하나투어, 제주항공의 업무혁신
@@ -1116,9 +1180,9 @@ LG U+는 100개 이상의 온프레미스 애플리케이션을 클라우드로 
 **블로그용 한줄**
 - “하나투어와 AK아이에스는 AI 혁신의 핵심이 모델 호출이 아니라 도메인 데이터를 AI가 믿고 쓸 수 있는 구조로 바꾸는 데 있음을 보여줬다.”
 
-# Batch 5 요약
+## sel-wps101 - 룰루메딕 의료마이데이터 플랫폼 혁신사례
 
-## sel-wps101
+[개별 세션 문서](sessions/industry_day/sel-wps101.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: 룰루메딕 의료마이데이터 플랫폼 혁신사례
@@ -1145,7 +1209,9 @@ Amazon EKS, Amazon Aurora, Amazon S3, AWS WAF, AWS Shield, Amazon Route 53, Elas
 **블로그용 한줄**  
 룰루메딕은 AWS 기반 의료 마이데이터 인프라로 국내 의료기록을 안전하게 연결하고, 국외 이전과 초개인화 헬스케어 AI까지 확장하는 로드맵을 제시했다.
 
-## sel-prt401-s
+## sel-prt401-s - 복잡함 속의 질서 : Beyond AI Adoption in Agentic Era (sponsored by 메가존클라우드, MegazoneCloud)
+
+[개별 세션 문서](sessions/industry_day/sel-prt401-s.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: 복잡함 속의 질서: Beyond AI Adoption in Agentic Era (sponsored by 메가존클라우드)
@@ -1172,7 +1238,9 @@ Agentic AI, AI Gateway, MCP, AI Studio, LLM Governance, AI Cost Control, Audit L
 **블로그용 한줄**  
 메가존클라우드는 에이전틱 AI 시대의 혼란을 줄이려면 모델보다 먼저 거버넌스와 게이트웨이 중심의 엔터프라이즈 AI 운영 체계가 필요하다고 제안했다.
 
-## sel-ind232
+## sel-ind232 - [현대지에프홀딩스] SMUS 기반 전사 MLOps 플랫폼으로 실현한 데이터 혁명
+
+[개별 세션 문서](sessions/industry_day/sel-ind232.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [현대지에프홀딩스] SMUS 기반 전사 MLOps 플랫폼으로 실현한 데이터 혁명
@@ -1199,7 +1267,9 @@ Amazon SageMaker Unified Studio, Amazon Redshift Data Sharing, AWS Lake Formatio
 **블로그용 한줄**  
 현대지에프홀딩스는 SageMaker Unified Studio 기반 전사 MLOps 플랫폼으로 그룹 데이터를 AI-ready 자산으로 바꾸고, 마케팅·CRM까지 이어지는 표준 AI 운영 체계를 구축했다.
 
-## sel-ind235
+## sel-ind235 - [퀀팃] 퀀트 개발 혁신: Bedrock 기반 자율형 AI 알파 팩토리
+
+[개별 세션 문서](sessions/industry_day/sel-ind235.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [퀀팃] 퀀트 개발 혁신: Bedrock 기반 자율형 AI 알파 팩토리
@@ -1226,7 +1296,9 @@ Amazon Bedrock, Claude, Multi-agent Workflow, RAG, Python Backtesting, Quant Res
 **블로그용 한줄**  
 퀀팃은 Bedrock 기반 멀티 에이전트로 퀀트 리서치, 코드 생성, 백테스트, 데이터 조달을 연결해 알파 전략 개발 시간을 극단적으로 단축하는 AI 알파 팩토리를 구현했다.
 
-## sel-ind214
+## sel-ind214 - [요기요] 요기요의 AIOps: SRE 운영의 콘솔 탈출기
+
+[개별 세션 문서](sessions/industry_day/sel-ind214.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: [요기요] 요기요의 AIOps: SRE 운영의 콘솔 탈출기
@@ -1253,7 +1325,9 @@ Amazon Bedrock AgentCore, AgentCore Runtime, AgentCore Identity, AgentCore Memor
 **블로그용 한줄**  
 요기요는 Bedrock AgentCore 기반 AIOps로 흩어진 운영 지표를 자연어 분석과 표준 리포트로 묶어 SRE의 콘솔 탐색 시간을 크게 줄였다.
 
-## sel-prt101-s
+## sel-prt101-s - The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠, Dataiku)
+
+[개별 세션 문서](sessions/industry_day/sel-prt101-s.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠)
@@ -1280,7 +1354,9 @@ Dataiku, MLOps, AgentOps, Structured Agent, Deterministic Workflow, Human-in-the
 **블로그용 한줄**  
 Dataiku는 현업 도메인 전문가가 데이터, 모델, 에이전트를 한 플랫폼에서 오케스트레이션하고 통제할 수 있어야 엔터프라이즈 AI가 실제 성과로 이어진다고 강조했다.
 
-## sel-prt105-s
+## sel-prt105-s - AI ‘개발’에서 ‘운영’으로: 엔터프라이즈 AI 전환 (sponsored by 베스핀글로벌 / BESPIN GLOBAL)
+
+[개별 세션 문서](sessions/industry_day/sel-prt105-s.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: AI ‘개발’에서 ‘운영’으로: 엔터프라이즈 AI 전환 (sponsored by 베스핀글로벌)
@@ -1307,7 +1383,9 @@ HelpNow AI Foundry, AWS Marketplace, Multi-LLM, LLMOps, RAGOps, Agent Orchestrat
 **블로그용 한줄**  
 베스핀글로벌은 HelpNow AI Foundry를 통해 기업 AI의 초점을 개발에서 운영으로 옮기고, 현업 주도 에이전트 생성과 LLMOps·거버넌스를 한 플랫폼으로 묶는 전략을 제시했다.
 
-## sel-prt211-s
+## sel-prt211-s - AI 컨시어지: 기억하는 AI가 만드는 다음 세대 고객 경험 (sponsored by 센드버드 / Sendbird)
+
+[개별 세션 문서](sessions/industry_day/sel-prt211-s.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: AI 컨시어지: 기억하는 AI가 만드는 다음 세대 고객 경험 (sponsored by 센드버드)
@@ -1334,7 +1412,9 @@ AI 상담의 성패를 자동화율만이 아니라 구매 단가, 업셀, 고�
 **블로그용 한줄**  
 센드버드는 고객을 기억하고 채널을 넘어 맥락을 이어가는 AI 컨시어지가 다음 세대 고객 경험과 브랜드 데이터 주도권의 핵심이 될 것이라고 제시했다.
 
-## sel-prt209-s
+## sel-prt209-s - 에버랜드의 VMware에서 Nutanix 클라우드 클러스터로 마이그레이션 여정 (sponsored by Nutanix)
+
+[개별 세션 문서](sessions/industry_day/sel-prt209-s.md)
 
 **제목/시간/트랙/발표자**  
 - 제목: 에버랜드의 VMware에서 Nutanix 클라우드 클러스터로 마이그레이션 여정 (sponsored by Nutanix)
@@ -1361,11 +1441,12 @@ Nutanix Cloud Clusters(NC2) on AWS, VMware Cloud on AWS, Nutanix Move, Multi-AZ,
 **블로그용 한줄**  
 Nutanix는 NC2 on AWS로 기존 VMware 기반 운영 모델을 유지하면서 에버랜드 워크로드를 안정적으로 이전하고, DR·데이터 보호·하이브리드 확장까지 이어지는 현실적 클라우드 전환 방식을 제시했다.
 
-# AWS Summit Seoul 2026 Industry Day - Batch 6 요약
 
 > Worker 6 담당 세션 9개. 모든 세션은 `process_session.py`로 VOD 오디오를 추출하고 faster-whisper `base` 모델로 생성한 실제 transcript를 참고했다. 일부 고유명사와 음성 인식 오류는 행사 메타데이터와 문맥으로 보정했다.
 
-## sel-ind201
+## sel-ind201 - [삼성전자 I 우아한형제들 I TwelveLabs] 혁신가와 리더의 대담 - AI로 이끄는 비즈니스 혁신
+
+[개별 세션 문서](sessions/industry_day/sel-ind201.md)
 
 **title/time/track/speakers**  
 - 제목: [삼성전자 I 우아한형제들 I TwelveLabs] 혁신가와 리더의 대담 - AI로 이끄는 비즈니스 혁신
@@ -1392,7 +1473,9 @@ Amazon Bedrock, Foundation Model, AI Agent, AI Native Organization, Reliability,
 **블로그용 한줄**  
 AI 혁신의 출발점은 더 좋은 모델보다, 리더가 먼저 써보고 조직이 함께 학습하는 일하는 방식의 변화였다.
 
-## sel-ind229
+## sel-ind229 - [롯데백화점] AI로 잇는 쇼핑 경험: 롯데백화점의 AI 에이전트 구축기
+
+[개별 세션 문서](sessions/industry_day/sel-ind229.md)
 
 **title/time/track/speakers**  
 - 제목: [롯데백화점] AI로 잇는 쇼핑 경험: 롯데백화점의 AI 에이전트 구축기
@@ -1419,7 +1502,9 @@ AI Agent, LLM, Amazon S3, Amazon CloudFront, OpenSearch, RAG, 에이전트 상�
 **블로그용 한줄**  
 롯데백화점의 더스틴은 FAQ 챗봇을 넘어, 백화점의 복잡한 현장 데이터를 고객 경험으로 바꾸는 AI 컨시어지였다.
 
-## sel-ind209
+## sel-ind209 - [빗썸] 빗썸은 생성형 AI를 어떻게 안전하게 운영하는가: Claude Code on Amazon Bedrock
+
+[개별 세션 문서](sessions/industry_day/sel-ind209.md)
 
 **title/time/track/speakers**  
 - 제목: [빗썸] 빗썸은 생성형 AI를 어떻게 안전하게 운영하는가: Claude Code on Amazon Bedrock
@@ -1446,7 +1531,13 @@ Amazon Bedrock, Claude Code, IAM, SCP, AWS Direct Connect, AWS PrivateLink, Clou
 **블로그용 한줄**  
 빗썸의 Claude Code 도입기는 금융권 생성형 AI가 빠르게 쓰이려면 먼저 안전하게 설계돼야 한다는 것을 보여줬다.
 
-## sel-ind221
+### 직접 들은 뒤 메모
+
+빗썸 세션은 핀테크 회사 입장에서 가장 직접적으로 참고할 만했다. Claude Code를 막는 것이 아니라 Bedrock, SSO, 프라이빗 네트워크, 감사 로그, 비용 관리, 프롬프트 필터링을 붙여 안전하게 쓰게 만드는 방향이 핵심이었다. 카카오페이도 개발자들이 이미 AI 도구를 쓰고 있다면, 사용을 금지하거나 개인 역량에 맡기는 것보다 금융권 수준의 통제와 개발자 경험을 함께 만족시키는 내부 AI 개발 플랫폼을 고민해야 한다. 특히 팀별 스킬 공유, 감사 가능한 로그, 모델 라우팅, 비용 가시화는 AX TF에서 우선순위 높게 볼 만하다.
+
+## sel-ind221 - [SK인텔릭스] SK인텔릭스가 구현하는 에이전틱 AI Robotics의 미래
+
+[개별 세션 문서](sessions/industry_day/sel-ind221.md)
 
 **title/time/track/speakers**  
 - 제목: [SK인텔릭스] SK인텔릭스가 구현하는 에이전틱 AI Robotics의 미래
@@ -1473,7 +1564,9 @@ Amazon Bedrock AgentCore, Bedrock Converse API, AWS IoT Core, Amazon S3, Amazon 
 **블로그용 한줄**  
 SK인텔릭스의 NAMUHX는 로봇이 도구를 넘어 생활 파트너가 되려면 온디바이스 AI와 클라우드 에이전트가 함께 설계돼야 함을 보여줬다.
 
-## sel-ind231
+## sel-ind231 - [바이프로스트 I 스트라드비젼] 피지컬 AI 학습을 위한 데이터 전략: 실 데이터와 합성 데이터로 Sim-to-Real 가속화
+
+[개별 세션 문서](sessions/industry_day/sel-ind231.md)
 
 **title/time/track/speakers**  
 - 제목: [바이프로스트 I 스트라드비젼] 피지컬 AI 학습을 위한 데이터 전략: 실 데이터와 합성 데이터로 Sim-to-Real 가속화
@@ -1500,7 +1593,9 @@ AWS Cloud, Synthetic Data, Simulation, Digital Twin, Sim-to-Real, Physical AI, A
 **블로그용 한줄**  
 피지컬 AI의 Sim-to-Real 격차를 줄이는 열쇠는 실 데이터와 합성 데이터를 경쟁시키는 것이 아니라 함께 흐르게 하는 데이터 전략이었다.
 
-## sel-ind301
+## sel-ind301 - [넥슨코리아] 새벽 3시, 18만 개의 모델이 대신 판단한다 : 넥슨의 에이전틱 Ops
+
+[개별 세션 문서](sessions/industry_day/sel-ind301.md)
 
 **title/time/track/speakers**  
 - 제목: [넥슨코리아] 새벽 3시, 18만 개의 모델이 대신 판단한다 : 넥슨의 에이전틱 Ops
@@ -1527,7 +1622,9 @@ Amazon Bedrock, LLM, Multi-Agent, AIOps, MCP, Anomaly Detection, Statistical Mod
 **블로그용 한줄**  
 넥슨의 에이전틱 Ops는 새벽 3시의 장애 알람을 사람이 혼자 판단하던 시대에서 통계 모델과 AI 에이전트가 함께 판단하는 시대로 옮겨갔다.
 
-## sel-ind205
+## sel-ind205 - [마이리얼트립] 마이리얼트립의 AI 네이티브 소수정예 팀: 일하는 방식의 재정의
+
+[개별 세션 문서](sessions/industry_day/sel-ind205.md)
 
 **title/time/track/speakers**  
 - 제목: [마이리얼트립] 마이리얼트립의 AI 네이티브 소수정예 팀: 일하는 방식의 재정의
@@ -1554,7 +1651,9 @@ AIDLC, AI Native Team, AI First, Customer Service Agent, Voice Agent, AI Assista
 **블로그용 한줄**  
 마이리얼트립은 AI를 잘 쓰는 개인을 늘리는 데서 멈추지 않고, 작은 팀이 문제를 끝까지 해결하는 조직으로 재설계하고 있었다.
 
-## sel-wps201
+## sel-wps201 - 규제 환경에서의 통제 가능한 AI 에이전트 아키텍처
+
+[개별 세션 문서](sessions/industry_day/sel-wps201.md)
 
 **title/time/track/speakers**  
 - 제목: 규제 환경에서의 통제 가능한 AI 에이전트 아키텍처
@@ -1581,7 +1680,9 @@ Amazon Bedrock, Amazon EKS, Bedrock Guardrails, Cross-account Guardrails, Bedroc
 **블로그용 한줄**  
 규제 환경의 AI 에이전트는 더 똑똑한 답보다, 누가 무엇을 왜 했는지 증명할 수 있는 설계가 먼저다.
 
-## sel-ind215
+## sel-ind215 - [야놀자] Multi-Agent로 AIOps를 혁신하다: 야놀자의 Bedrock AgentCore 구축 사례
+
+[개별 세션 문서](sessions/industry_day/sel-ind215.md)
 
 **title/time/track/speakers**  
 - 제목: [야놀자] Multi-Agent로 AIOps를 혁신하다: 야놀자의 Bedrock AgentCore 구축 사례

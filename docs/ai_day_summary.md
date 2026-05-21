@@ -1,88 +1,73 @@
 # AWS Summit Seoul 2026 AI Day 영상 요약
 
-작성 기준: AWS Summit Seoul 2026 Day 2 | AI Day 세션 VOD를 기준으로 정리했습니다. 각 세션은 가능한 경우 VOD 음성 전사를 기반으로 요약하고, 전사나 VOD 접근이 실패한 경우 공식 세션 메타데이터 기반 보조 요약으로 표시합니다.
-
-## 읽는 방법
-
-각 세션은 동일한 형식으로 정리했습니다.
-
-- 세션 정보: 시간, 트랙, 레벨, 발표자, 태그
-- 핵심 요약: 발표의 문제의식과 결론
-- 주요 포인트: 발표에서 실제로 기억할 만한 내용
-- AWS/기술 키워드: 언급된 서비스, 아키텍처, 방법론
-- AX TF 관점: 회사 AX 도입 논의와 연결할 수 있는 시사점
-- 공유용 한줄: 내부 공유 시 바로 가져다 쓸 수 있는 문장
-
-## 전체 흐름 메모
-
-AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 위한 데이터, 개발 방법론, 보안, 인프라, 평가, 운영 체계에 집중되어 있습니다. Industry Day가 산업별 적용 사례를 보여줬다면, AI Day는 그 사례를 가능하게 하는 플랫폼과 운영 원칙을 더 깊게 다룹니다. 특히 AgentCore, Strands Agents, Kiro, SageMaker, Bedrock, AI-ready data, AI 보안, MLOps/AIOps, 추론 인프라 최적화가 반복적으로 등장합니다.
+이 문서는 AWS Summit Seoul 2026 라이브스트림 VOD와 세션 메타데이터를 바탕으로 세션별로 정리한 것이다. 실제 공유와 탐색이 쉽도록 세션 단위로 재구성했다.
 
 ## 세션 인덱스
 
 | 시간 | 트랙 | ID | 세션 |
 |---|---|---|---|
-| 09:30 | Keynote | sel-key002 | 기조연설 - AI Day |
-| 11:10 | Track 1 | sel-aim301 | Superb AI의 HyperPod 기반 비전 파운데이션 모델 구축 여정 |
-| 11:10 | Track 2 | sel-ant305 | 에이전틱 AI를 위한 데이터 실무 가이드 |
-| 11:10 | Track 3 | sel-aim305 | [삼성전자] 21억 사용자규모 삼성 어카운트의 에이전틱 AIOps on AWS |
-| 11:10 | Track 4 | sel-mam201 | 기술 부채의 한계를 넘어 AI-Ready 비즈니스로: AWS가 제안하는 에이전틱 AI 마이그레이션 |
-| 11:10 | Track 5 | sel-dvt201 | 에이전틱 AI로 완전히 달라지는 소프트웨어와 개발 방법 |
-| 11:10 | Track 6 | sel-cmp401 | 대규모 분산 학습 AWS ParallelCluster 로 시작하기 |
-| 11:10 | Track 7 | sel-sec301 | AI 보안심화: AI 워크로드에 대한 심층방어 체계 구축 |
-| 11:10 | Track 8 | sel-biz203 | Amazon Connect Customer AI Agent가 다시 쓰는 고객 경험 : 불만을 감동으로 |
-| 11:10 | Track 9 | sel-dev304 | [당근 I CJ 올리브영] 장애에 강한 팀: 서버리스 온콜과 서비스 모니터링 |
-| 12:50 | Track 1 | sel-aim302 | [하이퍼커넥트] 하이퍼커넥트의 HyperPod 기반 Slurm on EKS 도입기 |
-| 12:50 | Track 2 | sel-ant201 | AI-Ready Data: 에이전틱 AI 시대, 데이터가 답이다 |
-| 12:50 | Track 3 | sel-dvt205 | Strands Agents와 함께 스스로 진화하는 AI 에이전트 |
-| 12:50 | Track 4 | sel-mam301 | [LG전자] AI 에이전트, AgentCore로 프로덕션까지 |
-| 12:50 | Track 5 | sel-dvt203 | [LG전자] AI 기반 개발 라이프사이클 
-(AI-DLC) 소개 |
-| 12:50 | Track 6 | sel-cmp202 | 인퍼런스와 모델 퍼포먼스 최적화를 위한 EKS 아키텍처 |
-| 12:50 | Track 7 | sel-sec201 | Agent-Driven 개발 환경, 보안 강화 전략은? |
-| 12:50 | Track 8 | sel-biz202 | Amazon Connect Customer를 활용한 에이전틱 AI 기반 고객 경험 혁신 |
-| 12:50 | Track 9 | sel-dev307 | Kiro Spec 모드 가속 가이드 & 서버리스 CDC 레이크하우스 |
-| 13:50 | Track 1 | sel-aim201 | Nova Forge와 Bedrock RFT로 모델 성능 극대화 |
-| 13:50 | Track 2 | sel-prt221-s | Enterprise AI Transformation: Agentic AI로 만드는 실질적인 비즈니스 성과 (sponsored by LG CNS) |
-| 13:50 | Track 3 | sel-prt201-s | SK AX가 구현한 SageMaker 기반 분석가와 현업의 통합 AI 환경 (sponsored by SK AX) |
-| 13:50 | Track 4 | sel-prt215-s | Unlocking Cost-Efficient Cloud and AI Performance on AWS with AMD EPYC (sponsored by AMD) |
-| 13:50 | Track 5 | sel-prt207-s | LLM 애플리케이션 프로덕션 운영, Observability로 풀다 (sponsored by 와탭, WhaTap) |
-| 13:50 | Track 6 | sel-prt213-s | Amazon Bedrock 기반 GitLab Duo 에이전트 플랫폼으로 혁신 가속화 (sponsored by Gitlab) |
-| 13:50 | Track 7 | sel-prt301-s | Secure AI by Design (sponsored by Palo Alto Networks) |
-| 13:50 | Track 8 | sel-prt302-s | AWS AI와 서버리스로 구축하는 완성차 지능형 상품 전략 플랫폼 (sponsored by 이테크시스템 / ETECH SYSTEM) |
-| 13:50 | Track 9 | sel-prt206-s | 속도와 제어를 동시에 - Cloudflare에서 AI 에이전트 구축하기 (sponsored by 클라우드플레어/Cloudflare) |
-| 14:30 | Track 1 | sel-aim401 | SageMaker AI MLOps, Nova 2 기반 멀티 에이전트로 한 단계 업그레이드 |
-| 14:30 | Track 2 | sel-ant303 | 밑줄 쫙! AI 성공 네비게이터 SageMaker Catalog |
-| 14:30 | Track 3 | sel-dvt304 | [삼성전자] 200개국 삼성 스마트 TV 앱 데이터를 자연어로 묻다: 에이전틱 AI on AWS |
-| 14:30 | Track 4 | sel-mam202 | 오래된 IT 시스템 현대화, 에이전틱 AI로 쉽게 |
-| 14:30 | Track 5 | sel-dvt204 | 누구나 손쉽게 개발효율 200% 향상시키는 Kiro 활용법 |
-| 14:30 | Track 6 | sel-cmp201 | AWS 차세대 AI 인프라: 리전에서 AI Factory까지 |
-| 14:30 | Track 7 | sel-sec302 | Amazon Bedrock AgentCore 로 AI 시대의 Zero Trust 구현하기 |
-| 14:30 | Track 8 | sel-biz204 | 20만 Amazonian의 AI 내재화 성공 경험, 그리고 Quick Desktop |
-| 14:30 | Track 9 | sel-dev305 | [네오위즈파트너스 | 알고릭스코퍼레이션] IaC 기반 EKS 멀티테넌시와 Sidecar-less 네트워킹 |
-| 15:30 | Track 1 | sel-aim202 | [우아한형제들] 우아한형제들의 Nova 2 프로덕션 적용 여정 |
-| 15:30 | Track 2 | sel-prt217-s | Oracle AI Database@AWS! AWS는 그대로, Exadata로 더욱 강력하게!(sponsored by Oracle) |
-| 15:30 | Track 3 | sel-dvt302 | 에이전트 성능 평가와 개선: 개발부터 운영까지 |
-| 15:30 | Track 4 | sel-prt106-s | Notion: API를 넘어 플랫폼으로 (sponsored by 노션, Notion) |
-| 15:30 | Track 5 | sel-prt103-s | MUSINSA - ClickHouse Cloud를 활용한 Audience Engine 및 다각적 비즈니스 확장을 위한 전략 (sponsored by ClickHouse) |
-| 15:30 | Track 6 | sel-prt212-s | Snowflake + AWS 통합 AI 전략: Cortex Code가 연결하는 데이터와 인텔리전스 (sponsored by Snowflake) |
-| 15:30 | Track 7 | sel-prt102-s | 3가지 관점으로 살펴보는 Red Hat OpenShift Service on AWS(ROSA)를 활용한 현대화의 새로운 접근 방식 (sponsored by Red Hat) |
-| 15:30 | Track 8 | sel-prt220-s | 당신의 AI 환경은 안녕하신지요? (sponsored by Zscaler) |
-| 15:30 | Track 9 | sel-dev308 | [미러] 맥 미니 없이도 서버리스로 만드는 AI Cloud Agent |
-| 16:10 | Track 1 | sel-aim303 | 40분 완성! SageMaker AI 기반 에이전틱 모델 구축 및 배포 |
-| 16:10 | Track 2 | sel-ant202 | 나야, 차세대 OpenSearch: 에이전틱 AI를 곁들인 |
-| 16:10 | Track 3 | sel-dvt303 | 프로덕션으로 가기 위한 에이전틱 AI 아키텍처 설계하기 |
-| 16:10 | Track 4 | sel-mam302 | AIOps 도전과 실전: AI SecOps에서 DevOps 에이전트까지 |
-| 16:10 | Track 5 | sel-dvt305 | Nova Act & Strands Agent 실전: AI 에이전트로 개발 워크플로 자동화하기 |
-| 16:10 | Track 6 | sel-cmp301 | AWS Trainium 기반 LLM 추론 A to Z: Neuron 환경 이해부터 성능 최적화까지 |
-| 16:10 | Track 7 | sel-sec202 | 신뢰할 수 있는 KMS 아키텍처의 진화와 서명키 관리 전략 |
-| 16:10 | Track 8 | sel-aim205 | 당신의 새로운 AI 업무 파트너, Amazon Quick |
-| 16:10 | Track 9 | sel-dev306 | [LG유플러스] AWS Kiro로 가속하는 IaC 혁신과 레거시 전환 |
+| 09:30 | Keynote | sel-key002 | [기조연설 - AI Day](sessions/ai_day/sel-key002.md) |
+| 11:10 | Track 1 | sel-aim301 | [Superb AI의 HyperPod 기반 비전 파운데이션 모델 구축 여정](sessions/ai_day/sel-aim301.md) |
+| 11:10 | Track 2 | sel-ant305 | [에이전틱 AI를 위한 데이터 실무 가이드](sessions/ai_day/sel-ant305.md) |
+| 11:10 | Track 3 | sel-aim305 | [[삼성전자] 21억 사용자규모 삼성 어카운트의 에이전틱 AIOps on AWS](sessions/ai_day/sel-aim305.md) |
+| 11:10 | Track 4 | sel-mam201 | [기술 부채의 한계를 넘어 AI-Ready 비즈니스로: AWS가 제안하는 에이전틱 AI 마이그레이션](sessions/ai_day/sel-mam201.md) |
+| 11:10 | Track 5 | sel-dvt201 | [에이전틱 AI로 완전히 달라지는 소프트웨어와 개발 방법](sessions/ai_day/sel-dvt201.md) |
+| 11:10 | Track 6 | sel-cmp401 | [대규모 분산 학습 AWS ParallelCluster 로 시작하기](sessions/ai_day/sel-cmp401.md) |
+| 11:10 | Track 7 | sel-sec301 | [AI 보안심화: AI 워크로드에 대한 심층방어 체계 구축](sessions/ai_day/sel-sec301.md) |
+| 11:10 | Track 8 | sel-biz203 | [Amazon Connect Customer AI Agent가 다시 쓰는 고객 경험 : 불만을 감동으로](sessions/ai_day/sel-biz203.md) |
+| 11:10 | Track 9 | sel-dev304 | [[당근 I CJ 올리브영] 장애에 강한 팀: 서버리스 온콜과 서비스 모니터링](sessions/ai_day/sel-dev304.md) |
+| 12:50 | Track 1 | sel-aim302 | [[하이퍼커넥트] 하이퍼커넥트의 HyperPod 기반 Slurm on EKS 도입기](sessions/ai_day/sel-aim302.md) |
+| 12:50 | Track 2 | sel-ant201 | [AI-Ready Data: 에이전틱 AI 시대, 데이터가 답이다](sessions/ai_day/sel-ant201.md) |
+| 12:50 | Track 3 | sel-dvt205 | [Strands Agents와 함께 스스로 진화하는 AI 에이전트](sessions/ai_day/sel-dvt205.md) |
+| 12:50 | Track 4 | sel-mam301 | [[LG전자] AI 에이전트, AgentCore로 프로덕션까지](sessions/ai_day/sel-mam301.md) |
+| 12:50 | Track 5 | sel-dvt203 | [[LG전자] AI 기반 개발 라이프사이클 
+(AI-DLC) 소개](sessions/ai_day/sel-dvt203.md) |
+| 12:50 | Track 6 | sel-cmp202 | [인퍼런스와 모델 퍼포먼스 최적화를 위한 EKS 아키텍처](sessions/ai_day/sel-cmp202.md) |
+| 12:50 | Track 7 | sel-sec201 | [Agent-Driven 개발 환경, 보안 강화 전략은?](sessions/ai_day/sel-sec201.md) |
+| 12:50 | Track 8 | sel-biz202 | [Amazon Connect Customer를 활용한 에이전틱 AI 기반 고객 경험 혁신](sessions/ai_day/sel-biz202.md) |
+| 12:50 | Track 9 | sel-dev307 | [Kiro Spec 모드 가속 가이드 & 서버리스 CDC 레이크하우스](sessions/ai_day/sel-dev307.md) |
+| 13:50 | Track 1 | sel-aim201 | [Nova Forge와 Bedrock RFT로 모델 성능 극대화](sessions/ai_day/sel-aim201.md) |
+| 13:50 | Track 2 | sel-prt221-s | [Enterprise AI Transformation: Agentic AI로 만드는 실질적인 비즈니스 성과 (sponsored by LG CNS)](sessions/ai_day/sel-prt221-s.md) |
+| 13:50 | Track 3 | sel-prt201-s | [SK AX가 구현한 SageMaker 기반 분석가와 현업의 통합 AI 환경 (sponsored by SK AX)](sessions/ai_day/sel-prt201-s.md) |
+| 13:50 | Track 4 | sel-prt215-s | [Unlocking Cost-Efficient Cloud and AI Performance on AWS with AMD EPYC (sponsored by AMD)](sessions/ai_day/sel-prt215-s.md) |
+| 13:50 | Track 5 | sel-prt207-s | [LLM 애플리케이션 프로덕션 운영, Observability로 풀다 (sponsored by 와탭, WhaTap)](sessions/ai_day/sel-prt207-s.md) |
+| 13:50 | Track 6 | sel-prt213-s | [Amazon Bedrock 기반 GitLab Duo 에이전트 플랫폼으로 혁신 가속화 (sponsored by Gitlab)](sessions/ai_day/sel-prt213-s.md) |
+| 13:50 | Track 7 | sel-prt301-s | [Secure AI by Design (sponsored by Palo Alto Networks)](sessions/ai_day/sel-prt301-s.md) |
+| 13:50 | Track 8 | sel-prt302-s | [AWS AI와 서버리스로 구축하는 완성차 지능형 상품 전략 플랫폼 (sponsored by 이테크시스템 / ETECH SYSTEM)](sessions/ai_day/sel-prt302-s.md) |
+| 13:50 | Track 9 | sel-prt206-s | [속도와 제어를 동시에 - Cloudflare에서 AI 에이전트 구축하기 (sponsored by 클라우드플레어/Cloudflare)](sessions/ai_day/sel-prt206-s.md) |
+| 14:30 | Track 1 | sel-aim401 | [SageMaker AI MLOps, Nova 2 기반 멀티 에이전트로 한 단계 업그레이드](sessions/ai_day/sel-aim401.md) |
+| 14:30 | Track 2 | sel-ant303 | [밑줄 쫙! AI 성공 네비게이터 SageMaker Catalog](sessions/ai_day/sel-ant303.md) |
+| 14:30 | Track 3 | sel-dvt304 | [[삼성전자] 200개국 삼성 스마트 TV 앱 데이터를 자연어로 묻다: 에이전틱 AI on AWS](sessions/ai_day/sel-dvt304.md) |
+| 14:30 | Track 4 | sel-mam202 | [오래된 IT 시스템 현대화, 에이전틱 AI로 쉽게](sessions/ai_day/sel-mam202.md) |
+| 14:30 | Track 5 | sel-dvt204 | [누구나 손쉽게 개발효율 200% 향상시키는 Kiro 활용법](sessions/ai_day/sel-dvt204.md) |
+| 14:30 | Track 6 | sel-cmp201 | [AWS 차세대 AI 인프라: 리전에서 AI Factory까지](sessions/ai_day/sel-cmp201.md) |
+| 14:30 | Track 7 | sel-sec302 | [Amazon Bedrock AgentCore 로 AI 시대의 Zero Trust 구현하기](sessions/ai_day/sel-sec302.md) |
+| 14:30 | Track 8 | sel-biz204 | [20만 Amazonian의 AI 내재화 성공 경험, 그리고 Quick Desktop](sessions/ai_day/sel-biz204.md) |
+| 14:30 | Track 9 | sel-dev305 | [[네오위즈파트너스 | 알고릭스코퍼레이션] IaC 기반 EKS 멀티테넌시와 Sidecar-less 네트워킹](sessions/ai_day/sel-dev305.md) |
+| 15:30 | Track 1 | sel-aim202 | [[우아한형제들] 우아한형제들의 Nova 2 프로덕션 적용 여정](sessions/ai_day/sel-aim202.md) |
+| 15:30 | Track 2 | sel-prt217-s | [Oracle AI Database@AWS! AWS는 그대로, Exadata로 더욱 강력하게!(sponsored by Oracle)](sessions/ai_day/sel-prt217-s.md) |
+| 15:30 | Track 3 | sel-dvt302 | [에이전트 성능 평가와 개선: 개발부터 운영까지](sessions/ai_day/sel-dvt302.md) |
+| 15:30 | Track 4 | sel-prt106-s | [Notion: API를 넘어 플랫폼으로 (sponsored by 노션, Notion)](sessions/ai_day/sel-prt106-s.md) |
+| 15:30 | Track 5 | sel-prt103-s | [MUSINSA - ClickHouse Cloud를 활용한 Audience Engine 및 다각적 비즈니스 확장을 위한 전략 (sponsored by ClickHouse)](sessions/ai_day/sel-prt103-s.md) |
+| 15:30 | Track 6 | sel-prt212-s | [Snowflake + AWS 통합 AI 전략: Cortex Code가 연결하는 데이터와 인텔리전스 (sponsored by Snowflake)](sessions/ai_day/sel-prt212-s.md) |
+| 15:30 | Track 7 | sel-prt102-s | [3가지 관점으로 살펴보는 Red Hat OpenShift Service on AWS(ROSA)를 활용한 현대화의 새로운 접근 방식 (sponsored by Red Hat)](sessions/ai_day/sel-prt102-s.md) |
+| 15:30 | Track 8 | sel-prt220-s | [당신의 AI 환경은 안녕하신지요? (sponsored by Zscaler)](sessions/ai_day/sel-prt220-s.md) |
+| 15:30 | Track 9 | sel-dev308 | [[미러] 맥 미니 없이도 서버리스로 만드는 AI Cloud Agent](sessions/ai_day/sel-dev308.md) |
+| 16:10 | Track 1 | sel-aim303 | [40분 완성! SageMaker AI 기반 에이전틱 모델 구축 및 배포](sessions/ai_day/sel-aim303.md) |
+| 16:10 | Track 2 | sel-ant202 | [나야, 차세대 OpenSearch: 에이전틱 AI를 곁들인](sessions/ai_day/sel-ant202.md) |
+| 16:10 | Track 3 | sel-dvt303 | [프로덕션으로 가기 위한 에이전틱 AI 아키텍처 설계하기](sessions/ai_day/sel-dvt303.md) |
+| 16:10 | Track 4 | sel-mam302 | [AIOps 도전과 실전: AI SecOps에서 DevOps 에이전트까지](sessions/ai_day/sel-mam302.md) |
+| 16:10 | Track 5 | sel-dvt305 | [Nova Act & Strands Agent 실전: AI 에이전트로 개발 워크플로 자동화하기](sessions/ai_day/sel-dvt305.md) |
+| 16:10 | Track 6 | sel-cmp301 | [AWS Trainium 기반 LLM 추론 A to Z: Neuron 환경 이해부터 성능 최적화까지](sessions/ai_day/sel-cmp301.md) |
+| 16:10 | Track 7 | sel-sec202 | [신뢰할 수 있는 KMS 아키텍처의 진화와 서명키 관리 전략](sessions/ai_day/sel-sec202.md) |
+| 16:10 | Track 8 | sel-aim205 | [당신의 새로운 AI 업무 파트너, Amazon Quick](sessions/ai_day/sel-aim205.md) |
+| 16:10 | Track 9 | sel-dev306 | [[LG유플러스] AWS Kiro로 가속하는 IaC 혁신과 레거시 전환](sessions/ai_day/sel-dev306.md) |
 
 ## 세션별 요약
 
-# AI Day Batch 1 요약
-
 ## sel-key002 - 기조연설 - AI Day
+
+[개별 세션 문서](sessions/ai_day/sel-key002.md)
 
 - 시간/트랙/레벨/발표자: 09:30-10:40 / Keynote / 100 Foundational / 안종훈(아모레퍼시픽), 신재현(우아한형제들), 김민태(우아한형제들), 윤석찬(AWS)
 - 요약: AWS 서울 리전 이후 10년의 클라우드 도입 흐름과 앞으로의 AI 네이티브 전환을 고객 사례 중심으로 정리한 키노트. 개발자는 더 이상 인프라 조립자가 아니라 AI를 활용해 제품 가설, 구현, 운영을 빠르게 반복하는 역할로 이동하고 있음을 강조했다.
@@ -97,6 +82,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim301 - Superb AI의 HyperPod 기반 비전 파운데이션 모델 구축 여정
 
+[개별 세션 문서](sessions/ai_day/sel-aim301.md)
+
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 1 / 300 Advanced / 유용환(AWS), 차문수(Superb AI)
 - 요약: 제조 도메인용 비전 파운데이션 모델을 직접 학습해야 하는 이유와 SageMaker HyperPod 기반 대규모 분산 학습 운영 방식을 Superb AI 사례로 설명했다. GPU 클러스터 운영, 장애 복구, 병렬화, 비용 최적화가 모델 경쟁력의 핵심 인프라 역량으로 다뤄졌다.
 - 주요 포인트:
@@ -109,6 +96,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 특화 AI 경쟁력은 좋은 모델 API만이 아니라 안정적으로 학습하고 재학습할 수 있는 인프라 역량에서 나온다.
 
 ## sel-ant305 - 에이전틱 AI를 위한 데이터 실무 가이드
+
+[개별 세션 문서](sessions/ai_day/sel-ant305.md)
 
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 2 / 300 Advanced / 김기영(AWS), 이종혁(AWS)
 - 요약: 챗봇, RAG, MCP, 자율 에이전트로 이어지는 변화 속에서 에이전트가 실제 업무를 수행하려면 데이터 접근, 맥락, 권한, 거버넌스가 함께 설계되어야 한다는 실무 가이드. 보험사 예시를 통해 에이전틱 애플리케이션을 데이터 기반으로 구성하는 흐름을 설명했다.
@@ -123,6 +112,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim305 - [삼성전자] 21억 사용자규모 삼성 어카운트의 에이전틱 AIOps on AWS
 
+[개별 세션 문서](sessions/ai_day/sel-aim305.md)
+
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 3 / 300 Advanced / 박규태(AWS), 이준영(삼성전자)
 - 요약: AI PoC의 상당수가 프로덕션에 도달하지 못하는 이유를 운영 우수성, 데이터, 신뢰, 안정성의 4개 축으로 설명하고, 삼성 어카운트 규모의 AIOps 사례로 프로덕션 전환 방법을 제시했다. Bedrock AgentCore 기반의 운영형 에이전트 구축 관점이 핵심이다.
 - 주요 포인트:
@@ -134,7 +125,13 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: AX TF가 사내 에이전트를 배포할 때는 "답변 정확도" 외에 누가 실행 권한을 갖는지, 실패 시 어떻게 롤백/에스컬레이션하는지, 비용과 로그를 어떻게 볼지까지 체크리스트화해야 한다. 개발 에이전트도 CI/CD와 연결되는 순간 운영 시스템으로 취급해야 한다.
 - 공유용 한줄: 프로덕션 에이전트는 잘 말하는 AI가 아니라 관찰, 통제, 복구가 가능한 운영 시스템이어야 한다.
 
+### 직접 들은 뒤 메모
+
+삼성 어카운트 세션은 대규모 사용자 기반 서비스에서 AIOps를 에이전틱하게 풀어가는 방향을 보여줬다. 21억 사용자 규모라는 숫자 자체보다, 복잡한 운영 이벤트를 사람이 다 보는 구조에서 AI가 이상 징후를 찾고 원인을 좁히고 조치 후보를 제시하는 구조로 바꾸는 흐름이 중요했다. 카카오페이도 결제, 송금, 인증, 증권, 보험처럼 서비스 경계가 넓기 때문에 장애 탐지와 영향도 분석, 고객 영향 추정, 사후 리포트 작성에 AIOps를 적용할 여지가 크다.
+
 ## sel-mam201 - 기술 부채의 한계를 넘어 AI-Ready 비즈니스로: AWS가 제안하는 에이전틱 AI 마이그레이션
+
+[개별 세션 문서](sessions/ai_day/sel-mam201.md)
 
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 4 / 200 Intermediate / 전소영(AWS), 김세진(AWS)
 - 요약: 클라우드 마이그레이션을 단순 서버 이전이 아니라 AI를 빠르게 적용할 수 있는 비즈니스 기반으로 전환하는 과정으로 정의했다. AWS의 에이전틱 AI 마이그레이션 접근을 통해 평가, 설계, 실행, 현대화의 반복 선순환을 설명했다.
@@ -149,6 +146,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-dvt201 - 에이전틱 AI로 완전히 달라지는 소프트웨어와 개발 방법
 
+[개별 세션 문서](sessions/ai_day/sel-dvt201.md)
+
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 5 / 200 Intermediate / 구태훈(AWS)
 - 요약: 에이전틱 AI가 소프트웨어 개발 방식을 요구사항 작성, 설계, 코드 생성, 검증, 운영 자동화까지 확장한다는 내용을 다뤘다. Kiro와 AWS의 에이전트 구축 서비스를 중심으로 개발자가 AI와 협업하는 새로운 작업 방식을 소개했다.
 - 주요 포인트:
@@ -160,7 +159,9 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: Claude Code류 도구 도입은 개인별 사용법 교육보다 팀 단위 "스펙 작성-코드 생성-리뷰-테스트" 표준을 만드는 쪽이 효과적이다. 사내 저장소 템플릿, PR 체크리스트, 테스트 기준을 AI가 이해하기 좋게 정리해야 한다.
 - 공유용 한줄: 개발 AX의 핵심은 코드를 빨리 쓰는 것이 아니라 요구사항부터 검증까지 AI와 함께 닫힌 루프를 만드는 것이다.
 
-## sel-cmp401 - 대규모 분산 학습 AWS ParallelCluster로 시작하기
+## sel-cmp401 - 대규모 분산 학습 AWS ParallelCluster 로 시작하기
+
+[개별 세션 문서](sessions/ai_day/sel-cmp401.md)
 
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 6 / 400 Expert / 조소현(AWS), 이수정(AWS)
 - 요약: 대규모 분산 학습 인프라를 AWS ParallelCluster와 Slurm 중심으로 구성하고 운영하는 실전 세션. GPU 노드, EFA 네트워크, AMI/컨테이너 전략, 모니터링, 장애 복구까지 HPC형 학습 클러스터 운영 포인트를 다뤘다.
@@ -175,6 +176,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-sec301 - AI 보안심화: AI 워크로드에 대한 심층방어 체계 구축
 
+[개별 세션 문서](sessions/ai_day/sel-sec301.md)
+
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 7 / 300 Advanced / 신은수(AWS), 신안셀모(AWS)
 - 요약: AI 워크로드를 안전하게 운영하기 위한 심층 방어 구조를 AWS 네이티브 서비스와 오픈소스 프레임워크 관점에서 설명했다. 프롬프트 인젝션, 유해 콘텐츠, RAG 권한 필터링, MCP 인증/인가까지 에이전틱 AI 보안의 실전 쟁점을 다뤘다.
 - 주요 포인트:
@@ -188,6 +191,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-biz203 - Amazon Connect Customer AI Agent가 다시 쓰는 고객 경험 : 불만을 감동으로
 
+[개별 세션 문서](sessions/ai_day/sel-biz203.md)
+
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 8 / 200 Intermediate / 이석원(AWS), 배경완(AWS)
 - 요약: Amazon Connect Customer를 중심으로 고객 여정 전반에 AI를 내재화해 셀프서비스, 상담원 지원, 후처리 자동화를 연결하는 방법을 소개했다. 항공편 변경 데모를 통해 AI 에이전트가 고객 맥락을 이해하고 업무 처리를 보조하는 흐름을 보여줬다.
 - 주요 포인트:
@@ -199,7 +204,9 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: 내부 헬프데스크나 IT 지원에도 유사한 패턴을 적용할 수 있다. 단순 FAQ 봇보다 티켓 맥락 요약, 담당자 추천, 처리 절차 안내, 후처리 기록 자동화부터 시작하면 실효성이 높다.
 - 공유용 한줄: 고객 경험 AX는 사람을 대체하기보다 반복 처리와 맥락 정리를 AI가 맡아 상담 품질을 높이는 방향이 현실적이다.
 
-## sel-dev304 - [당근 | CJ 올리브영] 장애에 강한 팀: 서버리스 온콜과 서비스 모니터링
+## sel-dev304 - [당근 I CJ 올리브영] 장애에 강한 팀: 서버리스 온콜과 서비스 모니터링
+
+[개별 세션 문서](sessions/ai_day/sel-dev304.md)
 
 - 시간/트랙/레벨/발표자: 11:10-11:50 / Track 9 / 300 Advanced / 김수빈(당근), 이태근(CJ 올리브영)
 - 요약: CJ 올리브영의 Amazon Connect 기반 서버리스 온콜 시스템과 당근의 CloudFront/MSK 모니터링 개선 사례를 공유했다. 장애 인지, 알림 품질, 담당자 라우팅, 대시보드 구조화가 운영 효율을 어떻게 높이는지 실무 중심으로 다뤘다.
@@ -214,6 +221,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim302 - [하이퍼커넥트] 하이퍼커넥트의 HyperPod 기반 Slurm on EKS 도입기
 
+[개별 세션 문서](sessions/ai_day/sel-aim302.md)
+
 - 시간/트랙/레벨/발표자: 12:50-13:30 / Track 1 / 300 Advanced / 오준석(AWS), 현륜식(AWS), 윤보현(하이퍼커넥트)
 - 요약: SageMaker HyperPod에서 기존 Slurm 워크플로우를 유지하면서 EKS의 운영 효율을 확보한 하이퍼커넥트 사례. Slurm on EKS 전환 과정과 Checkpointless Training, Elastic Training 등 대규모 학습 운영의 최신 개선점을 소개했다.
 - 주요 포인트:
@@ -226,6 +235,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 성공적인 AI 인프라 전환은 기존 워크플로우를 존중하면서 운영 자동화 계층을 점진적으로 얹는 방식이 강하다.
 
 ## sel-ant201 - AI-Ready Data: 에이전틱 AI 시대, 데이터가 답이다
+
+[개별 세션 문서](sessions/ai_day/sel-ant201.md)
 
 - 시간/트랙/레벨/발표자: 12:50-13:30 / Track 2 / 200 Intermediate / 유철민(AWS), 김지애(AWS)
 - 요약: 에이전틱 AI가 기대만큼 답하지 못하는 원인을 모델이 아니라 데이터 준비 부족에서 찾고, AI-Ready Data와 시맨틱 레이어 구축 방법을 설명했다. 라이브 데모를 통해 데이터 맥락과 의미 계층이 응답 품질을 어떻게 바꾸는지 보여줬다.
@@ -240,6 +251,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-dvt205 - Strands Agents와 함께 스스로 진화하는 AI 에이전트
 
+[개별 세션 문서](sessions/ai_day/sel-dvt205.md)
+
 - 시간/트랙/레벨/발표자: 12:50-13:30 / Track 3 / 200 Intermediate / 김제삼(AWS), 박경수(AWS)
 - 요약: AWS가 공개한 Strands Agents SDK를 활용해 자율 AI 에이전트를 구축하고, 지식 격차 식별, 추론 전략 수정, 동적 도구 생성 등 스스로 개선하는 패턴을 소개했다. 단순 에이전트 생성에서 한 단계 나아가 장기간 독립 운영되는 에이전트 시스템을 다뤘다.
 - 주요 포인트:
@@ -253,6 +266,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-mam301 - [LG전자] AI 에이전트, AgentCore로 프로덕션까지
 
+[개별 세션 문서](sessions/ai_day/sel-mam301.md)
+
 - 시간/트랙/레벨/발표자: 12:50-13:30 / Track 4 / 300 Advanced / 이광우(AWS), 송민지(AWS), 김영곤(LG전자)
 - 요약: Amazon Bedrock AgentCore 기반으로 엔터프라이즈급 AI 에이전트를 프로덕션에 올리기 위한 핵심 패턴을 설명하고 LG전자 사례로 적용 방식을 보여줬다. 신뢰성, 확장성, 도구 공유, 에이전트 간 협업, 메모리, 접근 제어, 관찰성이 주요 체크리스트로 제시됐다.
 - 주요 포인트:
@@ -264,9 +279,16 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: 사내 AX 플랫폼은 에이전트별 독립 구현을 방치하지 말고 공통 게이트웨이, 도구 레지스트리, 인증/인가, 로그 표준을 먼저 제공해야 한다. 그래야 각 팀이 빠르게 실험하면서도 보안과 운영 기준을 유지할 수 있다.
 - 공유용 한줄: 엔터프라이즈 에이전트의 승부처는 모델 성능보다 공통 도구, 권한, 메모리, 관찰성을 갖춘 운영 기반이다.
 
-# AI Day Batch 2 요약
+## sel-dvt203 - [LG전자] AI 기반 개발 라이프사이클 
+(AI-DLC) 소개
 
-## sel-dvt203 - [LG전자] AI 기반 개발 라이프사이클 (AI-DLC) 소개
+[개별 세션 문서](sessions/ai_day/sel-dvt203.md)
+
+(AI-DLC) 소개
+
+
+(AI-DLC) 소개
+
 
 - 시간/트랙/레벨/발표자: 12:50-13:30 KST / Track 5, Developer Tools / 200 Intermediate / 김수연(AWS), 박태진(LG전자)
 - 요약: 단순 코드 생성 도구 도입만으로는 SDLC 전체 생산성이 크게 오르지 않는다는 문제의식에서, 요구사항 정의부터 UX/UI 설계, 기술 의사결정, 코드 생성, 테스트, 배포까지 AI와 사람이 협업하는 AI-DLC 방법론을 소개했다. LG전자는 대규모 코드베이스와 기존 SRS/HLD/LLD 산출물 체계를 반영해 조직 맞춤형 워크플로우를 설계했고, 산출물 간 컨텍스트 단절을 줄이는 데 초점을 뒀다.
@@ -281,6 +303,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-cmp202 - 인퍼런스와 모델 퍼포먼스 최적화를 위한 EKS 아키텍처
 
+[개별 세션 문서](sessions/ai_day/sel-cmp202.md)
+
 - 시간/트랙/레벨/발표자: 12:50-13:30 KST / Track 6, Architecture·AI·Cloud Operations / 200 Intermediate / 정영준(AWS)
 - 요약: LLM 추론 비용과 지연을 줄이기 위한 Amazon EKS 기반 GPU 운영 전략을 다뤘다. EKS Auto Mode, Karpenter, GPU Operator, Cluster Autoscaler, DRA 등을 워크로드 성숙도에 따라 선택하고, vLLM, KV cache-aware routing, GPU autoscaling, tiered gateway 구성으로 처리량과 GPU utilization을 높이는 방향을 설명했다.
 - 주요 포인트:
@@ -293,6 +317,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: LLM 플랫폼의 승부는 모델 선택만이 아니라 GPU를 얼마나 덜 놀리고 지연을 얼마나 낮추느냐에 달려 있다.
 
 ## sel-sec201 - Agent-Driven 개발 환경, 보안 강화 전략은?
+
+[개별 세션 문서](sessions/ai_day/sel-sec201.md)
 
 - 시간/트랙/레벨/발표자: 12:50-13:30 KST / Track 7, Security & Identity / 200 Intermediate / 이지영(AWS), 한태경(AWS)
 - 요약: Claude Code, Kiro IDE, GitHub Copilot 같은 Agent-Driven 개발 환경에서는 코드 작성 속도가 보안 검토 속도를 압도하므로, 설계검토, 코드리뷰, 침투테스트를 자동화하는 AWS Security Agent 접근이 필요하다고 설명했다. 보안 요구사항을 조직별로 정의하고, PR 리뷰와 전체 코드 리뷰에서 취약점 탐지와 remediation 제안을 수행하는 흐름을 시연했다.
@@ -307,6 +333,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-biz202 - Amazon Connect Customer를 활용한 에이전틱 AI 기반 고객 경험 혁신
 
+[개별 세션 문서](sessions/ai_day/sel-biz202.md)
+
 - 시간/트랙/레벨/발표자: 12:50-13:30 KST / Track 8, Business Applications / 200 Intermediate / 김정곤(AWS), 이일구(AWS)
 - 요약: Amazon Connect를 AI 네이티브 고객경험 플랫폼으로 설명하며, 고객 셀프서비스, 상담사 지원, 상담 요약, 채널 통합, 분석까지 모든 접점에 AI를 적용하는 방식을 다뤘다. AI 에이전트는 프롬프트와 도구 연결을 통해 고객 의도를 이해하고, AgentCore와 지식 저장소, 기존 시스템 연계를 통해 실행까지 담당한다.
 - 주요 포인트:
@@ -319,6 +347,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 고객 AI의 핵심은 답변 자동화가 아니라 채널을 넘어 고객 맥락을 계속 이어가는 것이다.
 
 ## sel-dev307 - Kiro Spec 모드 가속 가이드 & 서버리스 CDC 레이크하우스
+
+[개별 세션 문서](sessions/ai_day/sel-dev307.md)
 
 - 시간/트랙/레벨/발표자: 12:50-13:30 KST / Track 9, AI·Databases / 300 Advanced / 최지연(AWSKRUG), 강은호(스테이지랩스)
 - 요약: 1부는 Kiro Spec Mode를 BDD와 FSD 구조에 결합해 LLM 컨텍스트를 격리하고 코드 구조 붕괴를 줄이는 사례를 소개했다. 2부는 AWS DMS Serverless, S3, Glue, Iceberg를 활용해 Aurora PostgreSQL의 변경 데이터를 CDC 방식으로 적재하는 서버리스 레이크하우스 구축 경험을 공유했다.
@@ -333,6 +363,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim201 - Nova Forge와 Bedrock RFT로 모델 성능 극대화
 
+[개별 세션 문서](sessions/ai_day/sel-aim201.md)
+
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Track 8, AI·Business Applications / 200 Intermediate / 우지환(AWS), 황윤상(AWS)
 - 요약: 기업 고유 데이터와 업무 프로세스를 반영한 모델 커스터마이징 방법으로 Nova Forge와 Amazon Bedrock RFT를 소개했다. Nova Forge는 모델 개발 단계별 체크포인트, AWS 큐레이션 데이터, 기업 데이터, 보상 함수를 결합해 기업 맞춤 모델을 만들고, Bedrock RFT는 대규모 라벨 데이터 없이 강화학습 기반으로 정확도와 안전성을 높이는 방법을 제공한다.
 - 주요 포인트:
@@ -345,6 +377,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 모델 커스터마이징은 데이터만 넣는 일이 아니라 회사가 원하는 답의 기준을 학습시키는 일이다.
 
 ## sel-prt221-s - Enterprise AI Transformation: Agentic AI로 만드는 실질적인 비즈니스 성과 (sponsored by LG CNS)
+
+[개별 세션 문서](sessions/ai_day/sel-prt221-s.md)
 
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 200 Intermediate / 이상원(LG CNS)
 - 요약: “AI를 아는가”에서 “AI가 어떤 비즈니스 지표를 바꾸는가”로 질문을 바꿔야 한다는 메시지의 세션이었다. LG CNS는 제조, 여행, 제약 등 사례를 통해 에이전틱 AI를 단순 자동화, 휴먼 인 더 루프 자동화, 풀 에이전틱 AI로 구분하고 업무 유형별 도입 방식을 설명했다.
@@ -359,6 +393,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt201-s - SK AX가 구현한 SageMaker 기반 분석가와 현업의 통합 AI 환경 (sponsored by SK AX)
 
+[개별 세션 문서](sessions/ai_day/sel-prt201-s.md)
+
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 200 Intermediate / 조진선(SK AX)
 - 요약: SK Innovation E&S의 통합 데이터·AI 플랫폼 구축 사례를 통해 AI 실패의 본질을 데이터 사일로, 현업 접근성 부족, 불안한 보안/비용 구조에서 찾았다. 3-Layer 레이크하우스, 비즈니스 메타데이터 카탈로그, Bedrock 기반 메타데이터 검색, SageMaker Unified Studio로 분석가와 현업이 함께 쓰는 환경을 구성했다.
 - 주요 포인트:
@@ -371,6 +407,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: AI 활용률은 모델 성능보다 현업이 안전하게 데이터를 찾고 쓸 수 있는 구조에서 갈린다.
 
 ## sel-prt215-s - Unlocking Cost-Efficient Cloud and AI Performance on AWS with AMD EPYC (sponsored by AMD)
+
+[개별 세션 문서](sessions/ai_day/sel-prt215-s.md)
 
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 200 Intermediate / 송성운(AMD Korea)
 - 요약: AMD EPYC 기반 AWS EC2 인스턴스가 클라우드와 AI 워크로드에서 성능과 비용 효율을 제공하는 방식을 소개했다. 최신 M8a, C8a, R8a 계열과 데이터베이스, AI 추론, HPC, 미디어 처리 워크로드 사례를 통해 CPU 기반 AI 추론과 범용 워크로드 최적화 포인트를 설명했다.
@@ -385,6 +423,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt207-s - LLM 애플리케이션 프로덕션 운영, Observability로 풀다 (sponsored by 와탭, WhaTap)
 
+[개별 세션 문서](sessions/ai_day/sel-prt207-s.md)
+
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 200 Intermediate / 신민철(WhaTap)
 - 요약: LLM 애플리케이션은 만들기는 쉬워졌지만 프로덕션 운영에서는 토큰 비용 폭증, 예측 어려운 응답 지연, 품질 저하, 할루시네이션 문제가 발생한다고 설명했다. 기존 APM/RUM만으로는 LLM API 호출, 프롬프트, 응답, 토큰 사용량, 모델 품질을 충분히 관측할 수 없으므로 LLM 전용 옵저버빌리티가 필요하다는 내용이다.
 - 주요 포인트:
@@ -397,6 +437,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: LLM 앱은 배포 후부터 진짜 비용과 품질 문제가 시작된다.
 
 ## sel-prt213-s - Amazon Bedrock 기반 GitLab Duo 에이전트 플랫폼으로 혁신 가속화 (sponsored by Gitlab)
+
+[개별 세션 문서](sessions/ai_day/sel-prt213-s.md)
 
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 200 Intermediate / Jimmy Gam(GitLab)
 - 요약: GitLab Duo Agent Platform이 Amazon Bedrock과 결합해 SDLC 전반에 에이전틱 AI를 내재화하는 방식을 소개했다. IDE나 CLI에 흩어진 AI 도구가 컨텍스트를 잃는 문제를 지적하며, 계획, 코딩, 코드리뷰, 보안, 컴플라이언스, CI/CD 데이터를 하나의 데이터 모델과 워크플로우 안에서 활용하는 접근을 제시했다.
@@ -411,6 +453,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt301-s - Secure AI by Design (sponsored by Palo Alto Networks)
 
+[개별 세션 문서](sessions/ai_day/sel-prt301-s.md)
+
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 300 Advanced / 김범수(Palo Alto Networks)
 - 요약: AI 사용과 AI 개발을 모두 설계 단계부터 보안 내재화해야 한다는 메시지의 세션이었다. Prisma Browser는 임직원의 외부 생성형 AI 사용을 발견·평가·통제하고, Prisma AIRS는 AI 애플리케이션과 에이전트 생태계의 모델, 데이터, 플러그인, 런타임, 프롬프트 인젝션, 데이터 유출 위험을 보호하는 플랫폼으로 소개됐다.
 - 주요 포인트:
@@ -424,6 +468,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt302-s - AWS AI와 서버리스로 구축하는 완성차 지능형 상품 전략 플랫폼 (sponsored by 이테크시스템 / ETECH SYSTEM)
 
+[개별 세션 문서](sessions/ai_day/sel-prt302-s.md)
+
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 300 Advanced / 김동희(ETECH SYSTEM)
 - 요약: 완성차 기업의 PDF, 웹, 카탈로그 기반 비정형 데이터 수집과 표준화 문제를 AWS AI와 서버리스 아키텍처로 해결한 사례다. Step Functions, EventBridge, Lambda로 수집·크롤링·추출·정규화·저장을 병렬 워크플로우로 만들고, Bedrock 기반 추출과 S3/Glue/Athena 기반 데이터 레이크로 상품 전략 데이터를 자산화했다.
 - 주요 포인트:
@@ -435,7 +481,13 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: 외부 PDF/웹 기반 리서치 업무는 AX 우선 후보가 될 수 있다. 단순 크롤링보다 출처 추적, 표준 명칭 매핑, JSON 스키마화, 오류율 모니터링을 포함해야 실무 의사결정에 쓸 수 있다.
 - 공유용 한줄: 비정형 데이터 자동화의 가치는 수집 속도보다 표준화와 출처 검증에서 나온다.
 
+### 직접 들은 뒤 메모
+
+완성차 지능형 상품 전략 플랫폼 세션은 AI와 서버리스가 업무 의사결정 플랫폼으로 연결되는 모습을 보여줬다. 자동차 상품 전략이라는 도메인은 다르지만, 여러 데이터 소스를 묶어 시장 변화와 상품 전략을 빠르게 분석한다는 구조는 핀테크에도 맞다. 카카오페이에서는 금융 상품, 혜택, 가맹점, 사용자 행동, 리스크 지표를 연결해 상품/마케팅/제휴 담당자가 직접 탐색할 수 있는 내부 전략 에이전트로 확장해볼 수 있다.
+
 ## sel-prt206-s - 속도와 제어를 동시에 - Cloudflare에서 AI 에이전트 구축하기 (sponsored by 클라우드플레어/Cloudflare)
+
+[개별 세션 문서](sessions/ai_day/sel-prt206-s.md)
 
 - 시간/트랙/레벨/발표자: 13:50-14:10 KST / Partner Track / 100 Foundational / 조성윤(Cloudflare)
 - 요약: AI 에이전트가 코드를 작성하고 실행하며 DB 조회와 API 호출까지 수행하는 시대에는 “빠른 배포”와 “권한·감사·격리”가 함께 필요하다고 설명했다. Cloudflare AI Gateway, MCP 서버 포털, 샌드박스 실행 환경을 통해 에이전트의 LLM 호출, 도구 접근, 데이터 유출, 무한 루프, 권한 남용을 통제하는 접근을 제시했다.
@@ -448,13 +500,14 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: 사내 에이전트 실험은 “개발자 편의”만 보고 열면 위험하다. 도구 호출을 승인 목록으로 제한하고, 에이전트별 권한과 로그, 샌드박스 실행 정책을 먼저 잡아야 한다.
 - 공유용 한줄: AI 에이전트는 도구가 아니라 실행 주체이므로 사람처럼 권한과 감사가 필요하다.
 
-# AI Day Batch 3 요약
 
 담당 세션: `sel-aim401`, `sel-ant303`, `sel-dvt304`, `sel-mam202`, `sel-dvt204`, `sel-cmp201`, `sel-sec302`, `sel-biz204`, `sel-dev305`, `sel-aim202`, `sel-prt217-s`, `sel-dvt302`, `sel-prt106-s`, `sel-prt103-s`
 
 대부분 helper script로 생성한 VOD 전사본을 기반으로 요약했습니다. 전사 품질상 일부 고유명사와 제품명은 공식 세션 메타데이터와 대조해 보정했습니다. `sel-prt106-s`는 전사 결과에 발화가 없어 메타데이터 기반 요약으로 작성했습니다.
 
 ## sel-aim401 - SageMaker AI MLOps, Nova 2 기반 멀티 에이전트로 한 단계 업그레이드
+
+[개별 세션 문서](sessions/ai_day/sel-aim401.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 1 / 400 - Expert / 김지훈(AWS), 최두섭(AWS)
 - 요약: SageMaker AI의 ML Pipeline, MLflow, Model Registry 같은 MLOps 기능을 더 잘 쓰기 위해 Nova 2 Lite 기반 멀티 에이전트를 붙이는 실전 접근을 소개했다. 발표는 단일 챗봇이 아니라 역할별 에이전트가 파이프라인 상태, 모델 레지스트리, 운영 지표를 해석하고 개선 후보를 제안하는 구조에 초점을 맞췄다. 에이전트는 자유롭게 패턴을 찾을 수 있지만, 운영 환경에서는 역할 분리와 검증 가능한 피드백 루프가 중요하다는 메시지가 반복됐다.
@@ -469,6 +522,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-ant303 - 밑줄 쫙! AI 성공 네비게이터 SageMaker Catalog
 
+[개별 세션 문서](sessions/ai_day/sel-ant303.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 2 / 300 - Advanced / 송규호(AWS), 강성희(AWS)
 - 요약: AI 에이전트가 정확한 답을 하려면 모델보다 먼저 데이터의 의미, 품질, 소유권, 계보가 정리되어야 한다는 세션이다. SageMaker Catalog는 정형/비정형 데이터, AI 모델, BI 대시보드까지 메타데이터로 묶어 사람이 보는 데이터 카탈로그와 AI가 참조하는 맥락을 일치시키는 방향으로 설명됐다. 핵심은 데이터 거버넌스를 문서 업무가 아니라 환각을 줄이는 AI 품질 관리 장치로 보는 것이다.
 - 주요 포인트:
@@ -481,6 +536,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: AI 성공의 네비게이터는 더 큰 모델이 아니라, AI가 믿고 읽을 수 있는 메타데이터 카탈로그다.
 
 ## sel-dvt304 - [삼성전자] 200개국 삼성 스마트 TV 앱 데이터를 자연어로 묻다: 에이전틱 AI on AWS
+
+[개별 세션 문서](sessions/ai_day/sel-dvt304.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 3 / 300 - Advanced / 이혜원(AWS), 이아름(AWS), 임경택(삼성전자)
 - 요약: 삼성 스마트 TV 앱 운영 데이터를 자연어로 질의하기 위해 LangGraph 멀티 에이전트를 Amazon Bedrock AgentCore 기반으로 프로덕션에 올린 사례다. 세션은 AgentCore Runtime, Gateway, Identity, Observability, Evaluation을 각각 운영 가능한 에이전트 플랫폼의 구성 요소로 풀어 설명했다. MCP를 통해 내부 API와 외부 도구 연결을 표준화하고, Okta IdP 연동과 자연어 기반 접근 제어, OpenTelemetry 트레이싱, CI 평가 자동화를 적용한 점이 실무적으로 중요했다.
@@ -495,6 +552,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-mam202 - 오래된 IT 시스템 현대화, 에이전틱 AI로 쉽게
 
+[개별 세션 문서](sessions/ai_day/sel-mam202.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 4 / 200 - Intermediate / 김윤서(AWS), 임연욱(AWS)
 - 요약: 레거시 시스템 현대화를 단순 마이그레이션이 아니라 에이전틱 AI 기반 End-to-End 전환으로 보는 세션이다. AWS Transform으로 기존 시스템을 분석하고 마이그레이션 후보를 도출한 뒤, Kiro로 최신 코드와 설계 산출물을 생성하고, Amazon Quick으로 전환 이후 데이터 분석과 업무 활용까지 연결하는 흐름을 제시했다. 요지는 오래된 시스템이 AI 도입의 병목이 되지 않도록 분석, 변환, 개발, 활용 단계를 자동화해야 한다는 것이다.
 - 주요 포인트:
@@ -507,6 +566,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 레거시 현대화의 AX 방향은 "옮기기"가 아니라 분석, 전환, 개발, 활용을 에이전트로 이어 붙이는 것이다.
 
 ## sel-dvt204 - 누구나 손쉽게 개발효율 200% 향상시키는 Kiro 활용법
+
+[개별 세션 문서](sessions/ai_day/sel-dvt204.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 5 / 200 - Intermediate / 전치훈(AWS), 강수희(AWS)
 - 요약: Kiro를 단순 코딩 도우미가 아니라 프로젝트 지식과 외부 도구를 연결해 자율 검증 루프를 만드는 개발 에이전트로 활용하는 방법을 다뤘다. 발표는 "에이전트가 코드를 고쳤는데 동작하지 않는다"는 문제를 출발점으로, MCP, Steering, Powers를 통해 팀 규칙, 도메인 문서, 실행 도구, 테스트를 에이전트 컨텍스트에 넣는 방식을 설명했다. 신규 멤버 온보딩과 반복 개발 작업 자동화에도 적용할 수 있다는 점이 강조됐다.
@@ -521,6 +582,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-cmp201 - AWS 차세대 AI 인프라: 리전에서 AI Factory까지
 
+[개별 세션 문서](sessions/ai_day/sel-cmp201.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 6 / 200 - Intermediate / 강동환(AWS), 신재현(AWS)
 - 요약: AWS의 AI 인프라 전략을 리전, 가속 컴퓨팅, 네트워크, AI Factory 관점에서 설명한 세션이다. 대규모 학습과 추론은 GPU/가속기만이 아니라 EFA 같은 네트워크, 배포 단위, 리전 선택, 데이터 주권 요구와 함께 설계해야 한다는 점이 중심이다. AWS AI Factories는 엄격한 주권 요구가 있는 고객에게 완전 관리형 AI 인프라를 제공하면서도 클라우드 운영 편의성을 유지하는 선택지로 소개됐다.
 - 주요 포인트:
@@ -533,6 +596,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 차세대 AI 인프라는 GPU 구매가 아니라, 리전·네트워크·주권·운영 모델을 함께 설계하는 일이다.
 
 ## sel-sec302 - Amazon Bedrock AgentCore 로 AI 시대의 Zero Trust 구현하기
+
+[개별 세션 문서](sessions/ai_day/sel-sec302.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 7 / 300 - Advanced / 이민우(AWS), 황재훈(AWS)
 - 요약: AI 에이전트가 도구와 API를 직접 호출하는 시대에 Zero Trust를 어떻게 적용할지 다룬 보안 세션이다. Amazon Bedrock AgentCore Identity와 Gateway를 사용해 에이전트의 신원, 사용자 위임 권한, 도구 접속, 자격 증명 보관을 중앙에서 관리하는 패턴이 소개됐다. 발표는 에이전트의 자율성을 유지하되 API 키나 OAuth 토큰을 안전하게 다루고, MCP 도구 연결을 통제 가능한 경로로 만드는 것이 핵심이라고 설명했다.
@@ -547,6 +612,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-biz204 - 20만 Amazonian의 AI 내재화 성공 경험, 그리고 Quick Desktop
 
+[개별 세션 문서](sessions/ai_day/sel-biz204.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 8 / 200 - Intermediate / 한상훈(AWS), 고지환(AWS)
 - 요약: Amazon이 내부적으로 AI를 20만 임직원의 업무에 안착시킨 경험과 Amazon Quick Desktop을 소개한 세션이다. 핵심은 AI가 답변만 하는 단계에서 벗어나 파편화된 데이터, 보안 심사, 변화관리, 사용자 커뮤니티를 거쳐 실제 행동과 업무 수행으로 이어지게 만든 과정이다. Quick Desktop은 회사 데이터와 업무 도구를 연결해 검색, 질문, 실행을 한 곳에서 처리하는 네이티브 AI 팀메이트로 설명됐다.
 - 주요 포인트:
@@ -558,7 +625,13 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: 사내 AX 확산은 모델 성능 발표보다 실제 사용자 집단, 업무별 플레이북, 커뮤니티, 교육 콘텐츠가 중요하다. 개발자에게는 Claude Code류 도구, 현업에게는 Quick류 업무 에이전트를 제공하되 보안 심사와 성공 사례 공유를 중앙에서 지원해야 확산 속도가 난다.
 - 공유용 한줄: AI 내재화는 도구를 여는 날이 아니라, 직원들이 매일 쓰는 업무 흐름에 AI가 들어가는 날 시작된다.
 
+### 직접 들은 뒤 메모
+
+20만 Amazonian의 AI 내재화 경험은 AX 확산을 도구 배포가 아니라 조직 변화로 봐야 한다는 점을 보여줬다. Quick Desktop 같은 업무 환경은 개인이 여러 AI 도구를 흩어져 쓰는 상태를 줄이고, 회사가 승인한 데이터와 도구 안에서 AI를 쓰게 만드는 방향으로 이해됐다. 카카오페이에서도 Claude Code, Cursor, Amazon Q, Bedrock, 사내 LLM 도구 사용 경험을 하나의 업무 포털이나 스킬 허브로 연결하면, 개인 생산성을 팀과 전사 역량으로 바꾸는 출발점이 될 수 있다.
+
 ## sel-dev305 - [네오위즈파트너스 | 알고릭스코퍼레이션] IaC 기반 EKS 멀티테넌시와 Sidecar-less 네트워킹
+
+[개별 세션 문서](sessions/ai_day/sel-dev305.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 14:30-15:10 KST / Track 9 / 300 - Advanced / 황우빈(네오위즈파트너스), 이주안(알고릭스코퍼레이션)
 - 요약: EKS 기반 서비스 인프라를 단일 클러스터에서 멀티클러스터와 멀티테넌시 구조로 확장한 경험을 공유한 세션이다. Terragrunt 기반 IaC로 프로덕트별 배포와 권한 체계를 만들고, 이후 Cilium과 VPC Lattice를 결합해 사이드카 없이 클러스터 간 서비스 연결을 단순화하는 방향을 제시했다. 마지막 메시지는 연결은 AWS 관리형 기능에 맡기고, 통제와 거버넌스는 조직이 책임지는 선을 명확히 긋자는 것이었다.
@@ -573,6 +646,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim202 - [우아한형제들] 우아한형제들의 Nova 2 프로덕션 적용 여정
 
+[개별 세션 문서](sessions/ai_day/sel-aim202.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 15:30-15:50 KST / Track 1 / 200 - Intermediate / 장재주, 남진호, 박경태(우아한형제들)
 - 요약: 우아한형제들이 사내 개발자가 쉽게 LLM을 쓰도록 Bedrock LLM Hub를 만들고, Amazon Nova 2 Lite를 다국어 배달 서비스에 프로덕션 적용한 경험을 공유했다. 세션은 원클릭 API 키 발급, 비용 추적, 자바/코틀린 기반 백엔드 아키텍처로 진입 장벽을 낮춘 점과 실제 번역/다국어 처리 서비스에서 모델 선택보다 시스템 설계가 더 중요했다는 교훈을 강조했다. 마지막에는 LLM 성능을 높이는 적절한 아키텍처가 모델 자체보다 중요할 수 있다는 메시지로 마무리됐다.
 - 주요 포인트:
@@ -585,6 +660,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 우아한형제들 사례는 LLM 도입의 병목이 모델 접근이 아니라, 개발자가 안심하고 쓰는 내부 LLM 플랫폼임을 보여준다.
 
 ## sel-prt217-s - Oracle AI Database@AWS! AWS는 그대로, Exadata로 더욱 강력하게!(sponsored by Oracle)
+
+[개별 세션 문서](sessions/ai_day/sel-prt217-s.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 15:30-15:50 KST / Track 2 / 200 - Intermediate / 조경진(Oracle Korea)
 - 요약: Oracle AI Database@AWS를 통해 AWS 환경에서 Oracle Exadata와 Oracle AI Database 26ai를 활용하는 방안을 소개한 스폰서 세션이다. 온프레미스와 클라우드가 분리된 구조에서 생기는 데이터 이동, 운영 복잡도, 성능 요구를 줄이고, AWS 서비스와 Oracle 데이터베이스의 강점을 함께 쓰는 구성이 중심이었다. AI 관점에서는 데이터베이스 안의 데이터, 벡터/AI 기능, 보안과 운영을 함께 묶어 활용하는 메시지가 강조됐다.
@@ -599,6 +676,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-dvt302 - 에이전트 성능 평가와 개선: 개발부터 운영까지
 
+[개별 세션 문서](sessions/ai_day/sel-dvt302.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 15:30-15:50 KST / Track 3 / 300 - Advanced / 김무현(AWS)
 - 요약: 에이전트가 단순 생성형 응답에서 툴콜, 계획, 멀티 에이전트로 진화하면서 평가 방식도 개발 단계와 운영 단계 모두에 필요해졌다는 세션이다. AgentCore Evaluation과 Strands Evaluation을 이용해 개발 중 성능을 측정하고, 운영 중에는 프로덕션 에이전트를 지속적으로 모니터링하고 개선하는 흐름을 설명했다. LLM 기반 평가만 고집할 필요는 없으며, 중요한 케이스를 반복 평가하는 파이프라인을 만들어야 한다는 메시지가 실용적이었다.
 - 주요 포인트:
@@ -611,6 +690,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 에이전트 품질은 출시 전에 한 번 보는 점수가 아니라, 개발부터 운영까지 계속 도는 평가 파이프라인이다.
 
 ## sel-prt106-s - Notion: API를 넘어 플랫폼으로 (sponsored by 노션, Notion)
+
+[개별 세션 문서](sessions/ai_day/sel-prt106-s.md)
 
 - 시간/트랙/레벨/발표자: 2026-05-21 15:30-15:50 KST / Track 4 / 100 - Foundational / Eric Goldman(Notion)
 - 요약: 메타데이터 기반 요약. VOD 전사 결과에 발화가 없어 공식 세션 설명을 기반으로 정리했다. Notion은 단순 CRUD API나 CLI, MCP를 넘어 에이전트가 실제 업무를 수행할 수 있는 공유 워크스페이스 플랫폼으로 진화하고 있다는 메시지를 제시했다. 핵심은 데이터를 동기화하고, 툴을 구축하고, 에이전트를 공동 작업 공간에 연결해 사람이 쓰는 업무 맥락과 AI가 실행하는 작업 맥락을 같은 공간에 두는 것이다.
@@ -625,6 +706,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt103-s - MUSINSA - ClickHouse Cloud를 활용한 Audience Engine 및 다각적 비즈니스 확장을 위한 전략 (sponsored by ClickHouse)
 
+[개별 세션 문서](sessions/ai_day/sel-prt103-s.md)
+
 - 시간/트랙/레벨/발표자: 2026-05-21 15:30-15:50 KST / Track 5 / 100 - Foundational / 이기훈(ClickHouse), 최민영(무신사), 박병길(무신사)
 - 요약: 무신사가 AWS 기반 ClickHouse Cloud로 Audience Engine을 구축하고, Vector Search 룩어라이크 타겟팅, OLAP 기반 AI 분석, 실시간 로그 서빙 등으로 데이터 활용 범위를 넓힌 사례다. 발표는 ClickPipes와 Materialized View를 활용해 데이터 파이프라인과 집계 처리를 단순화하고, 셀프호스팅 ClickHouse 운영 부담을 줄이기 위해 ClickHouse Cloud를 검토한 경험을 공유했다. 패션 플랫폼의 고객 세그먼트, 로그, 추천/타겟팅 데이터를 빠르게 분석하는 것이 핵심 가치였다.
 - 주요 포인트:
@@ -636,9 +719,9 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - AX TF 관점/회사 AX 도입 시사점: AX 서비스가 개인화, 추천, 영업/마케팅 자동화로 확장되려면 빠른 분석 DB와 실시간 이벤트 파이프라인이 필요하다. 기존 DW만으로 어렵다면 ClickHouse류 OLAP/Vector Search 기반을 별도 서빙·분석 계층으로 두는 아키텍처를 검토할 만하다.
 - 공유용 한줄: 무신사 사례는 AX 개인화의 기반이 모델만이 아니라, 빠르게 세그먼트화하고 서빙할 수 있는 실시간 분석 엔진임을 보여준다.
 
-# AI Day Batch 4 요약
-
 ## sel-prt212-s - Snowflake + AWS 통합 AI 전략: Cortex Code가 연결하는 데이터와 인텔리전스 (sponsored by Snowflake)
+
+[개별 세션 문서](sessions/ai_day/sel-prt212-s.md)
 
 - 시간/트랙/레벨/발표자: 15:30-15:50 KST / Track 6 / 200 - Intermediate / 김현정, Senior Partner Solution Engineer, Snowflake
 - 요약: Snowflake와 AWS를 함께 써서 엔터프라이즈 AI용 통합 데이터 파운데이션을 만드는 접근을 소개했다. 발표자는 Snowflake 고객의 상당수가 AWS 리전에서 운영 중이며, S3, Glue Catalog, Iceberg, Bedrock, MCP, Cortex AI/Agent, Amazon Quick, AgentCore 같은 연동으로 데이터 이동 없이 AI 워크플로를 구성할 수 있다고 설명했다.
@@ -653,6 +736,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-prt102-s - 3가지 관점으로 살펴보는 Red Hat OpenShift Service on AWS(ROSA)를 활용한 현대화의 새로운 접근 방식 (sponsored by Red Hat)
 
+[개별 세션 문서](sessions/ai_day/sel-prt102-s.md)
+
 - 시간/트랙/레벨/발표자: 15:30-15:50 KST / Track 7 / 100 - Foundational / 송찬규, 부장, 한국레드햇
 - 요약: 레거시 VM, 컨테이너, 서버리스, AI가 공존하는 복잡한 IT 환경에서 ROSA를 활용해 현대화하는 방식을 설명했다. 발표자는 기존 애플리케이션 운영 지식, 상용 소프트웨어 지원 체계, AI 도구 도입 역량 부족을 장벽으로 보고, AWS와 Red Hat이 제공하는 관리형 OpenShift가 이를 완화한다고 정리했다.
 - 주요 포인트:
@@ -665,6 +750,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: ROSA 세션의 핵심은 레거시 현대화와 AI 워크로드 수용을 같은 컨테이너 플랫폼 전략으로 묶자는 것이다.
 
 ## sel-prt220-s - 당신의 AI 환경은 안녕하신지요? (sponsored by Zscaler)
+
+[개별 세션 문서](sessions/ai_day/sel-prt220-s.md)
 
 - 시간/트랙/레벨/발표자: 15:30-15:50 KST / Track 8 / 200 - Intermediate / 인승진, 전무, Zscaler
 - 요약: 직원용 SaaS AI, 사내 AI 서비스, 고객 대상 AI, 에이전트형 AI가 동시에 늘어나는 환경에서 제로 트러스트 기반 보안이 필요하다는 내용이었다. 발표자는 AI 보안이 완전히 새로운 원칙이 아니라 기존 보안의 가시성, 통제, 데이터 보호, 접근 제어를 AI 사용 경로에 맞게 확장하는 것이라고 설명했다.
@@ -679,6 +766,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-dev308 - [미러] 맥 미니 없이도 서버리스로 만드는 AI Cloud Agent
 
+[개별 세션 문서](sessions/ai_day/sel-dev308.md)
+
 - 시간/트랙/레벨/발표자: 15:30-15:50 KST / Track 9 / 300 - Advanced / 이상현, CEO, Serverless Hero, 미러
 - 요약: 로컬 Mac mini에서 돌리는 에이전트 루프를 AWS 서버리스 아키텍처로 옮기는 관점을 소개했다. 발표자는 에이전트가 본질적으로 채팅 히스토리, LLM 호출, tool call 실행, 상태 저장, 외부 이벤트 처리로 구성된 일반 소프트웨어이며, Lambda와 DynamoDB 등으로 충분히 클라우드화할 수 있다고 설명했다.
 - 주요 포인트:
@@ -691,6 +780,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 에이전트는 신비한 별도 장르가 아니라 서버리스로 운영 가능한 상태ful 업무 소프트웨어다.
 
 ## sel-aim303 - 40분 완성! SageMaker AI 기반 에이전틱 모델 구축 및 배포
+
+[개별 세션 문서](sessions/ai_day/sel-aim303.md)
 
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 1 / 300 - Advanced / 박지윤, 솔루션즈 아키텍트, AWS; 강광일, 테크니컬 어카운트 매니저, AWS
 - 요약: SageMaker AI로 에이전틱 AI에 필요한 모델 커스터마이징, 배포, AgentCore 연동까지 엔드투엔드로 구현하는 흐름을 다뤘다. 발표자는 생성형 AI에서 에이전틱 AI로 넘어가며 추론 컴퓨팅 요구가 커지고, 업무별 모델을 비용 효율적으로 커스터마이징/서빙하는 역량이 중요해졌다고 설명했다.
@@ -705,6 +796,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-ant202 - 나야, 차세대 OpenSearch: 에이전틱 AI를 곁들인
 
+[개별 세션 문서](sessions/ai_day/sel-ant202.md)
+
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 2 / 200 - Intermediate / 김새름, 테크니컬 어카운트 매니저, AWS; 이승철, 테크니컬 어카운트 매니저, AWS
 - 요약: OpenSearch가 키워드 검색을 넘어 시맨틱 검색, 벡터 검색, 에이전틱 검색의 기반 인프라로 진화하고 있다는 내용이었다. 발표자는 클러스터 운영 관측성, 비용 절감 기능, 대규모 벡터 성능, MCP 서버와 에이전틱 메모리를 함께 소개했다.
 - 주요 포인트:
@@ -717,6 +810,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: 에이전트 시대의 검색은 단순 RAG 저장소가 아니라 메모리, 관측성, 도구 호출의 핵심 인프라다.
 
 ## sel-dvt303 - 프로덕션으로 가기 위한 에이전틱 AI 아키텍처 설계하기
+
+[개별 세션 문서](sessions/ai_day/sel-dvt303.md)
 
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 3 / 300 - Advanced / 이유정, AI/ML 전문 솔루션즈 아키텍트, AWS; 류하선, AI/ML 전문 솔루션즈 아키텍트, AWS
 - 요약: POC 수준 에이전트를 프로덕션으로 확장하려면 모델, 도구, 메모리, 게이트웨이, 관측성, 평가, 운영 체계를 갖춘 파운데이션이 필요하다는 세션이었다. 발표자는 에이전틱 AI의 실패는 잘못된 답변을 넘어 잘못된 행동으로 이어질 수 있으므로 중앙 통제와 AgentOps가 필수라고 강조했다.
@@ -731,6 +826,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-mam302 - AIOps 도전과 실전: AI SecOps에서 DevOps 에이전트까지
 
+[개별 세션 문서](sessions/ai_day/sel-mam302.md)
+
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 4 / 300 - Advanced / 이연수, 테크니컬 어카운트 매니저, AWS; 박종진, 테크니컬 어카운트 매니저, AWS; 현승열, 선임 엔지니어, 삼성전자
 - 요약: 삼성전자 계정 서비스의 WAF 로그 분석 AI SecOps 사례와 AWS DevOps Agent를 소개했다. 삼성전자 사례는 대규모 트래픽과 하루 TB급 보안 로그를 사람이 분석하는 한계를 Bedrock, Strands Agents, 멀티 에이전트 구조로 해결하려는 여정이었다.
 - 주요 포인트:
@@ -743,6 +840,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: AIOps의 현실적 출발점은 "사람이 보던 로그"를 에이전트가 질의, 해석, 조치 제안까지 이어주는 것이다.
 
 ## sel-dvt305 - Nova Act & Strands Agent 실전: AI 에이전트로 개발 워크플로 자동화하기
+
+[개별 세션 문서](sessions/ai_day/sel-dvt305.md)
 
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 5 / 300 - Advanced / 김예진, 솔루션즈 아키텍트, AWS; 안수진, 클라우드 서포트 엔지니어, AWS
 - 요약: Amazon Nova Act로 브라우저 기반 QA 자동화 에이전트를 만들고, Strands Agents SDK로 코드 어시스턴트와 멀티 에이전트 개발 자동화 파이프라인을 만드는 방법을 소개했다. 발표는 에이전트 성숙도를 RPA식 follow, 생성형 AI assist, 협업형 collaborate, 자율형 pioneer 단계로 설명하고, 현재는 assist에서 collaborate로 빠르게 이동 중이라고 봤다.
@@ -758,6 +857,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-cmp301 - AWS Trainium 기반 LLM 추론 A to Z: Neuron 환경 이해부터 성능 최적화까지
 
+[개별 세션 문서](sessions/ai_day/sel-cmp301.md)
+
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 6 / 300 - Advanced / 이수지, GTM 가속 컴퓨팅 전문 솔루션즈 아키텍트, AWS; 차수정, 딥러닝 아키텍트, AWS
 - 요약: AWS Trainium과 Neuron SDK를 활용해 LLM 추론을 비용 효율적으로 운영하고 성능을 최적화하는 방법을 다뤘다. 발표는 LLM 추론의 비용 증가, 디코드 병목, 이기종 하드웨어 전환 부담을 문제로 제시하고 Trainium2, Neuron, vLLM/PyTorch 연동, NKI 최적화로 해결하는 흐름을 설명했다.
 - 주요 포인트:
@@ -770,6 +871,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: Trainium+Neuron은 LLM 추론 비용과 지연시간을 낮추기 위한 AWS 전용 가속기 선택지다.
 
 ## sel-sec202 - 신뢰할 수 있는 KMS 아키텍처의 진화와 서명키 관리 전략
+
+[개별 세션 문서](sessions/ai_day/sel-sec202.md)
 
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 7 / 200 - Intermediate / 정관진, 보안 전문 솔루션즈 아키텍트, AWS; 문민아, 테크니컬 어카운트 매니저, AWS
 - 요약: AWS KMS가 보안, 내구성, 가용성을 원칙으로 어떻게 발전했는지와 서명키 관리 전략을 설명했다. 발표자는 암호화의 기본 개념부터 시작해 클라우드 키 관리가 필요한 이유, 규제 대응, 감사/운영 통제, 포스트 양자 서명 준비까지 다뤘다.
@@ -785,6 +888,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 
 ## sel-aim205 - 당신의 새로운 AI 업무 파트너, Amazon Quick
 
+[개별 세션 문서](sessions/ai_day/sel-aim205.md)
+
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 8 / 200 - Intermediate / 채정희, 솔루션즈 아키텍트, AWS; 이지연, 솔루션즈 아키텍트, AWS
 - 요약: Amazon Quick을 회사 데이터와 업무 시스템에 연결된 AI 업무 파트너로 소개했다. 발표자는 직원들이 여러 앱을 오가며 정보를 찾고 정리하는 데 많은 시간을 쓰는 문제를 짚고, Quick이 자연어 검색, 맥락 있는 답변, 실행, 보안/거버넌스를 한 경험으로 묶는다고 설명했다.
 - 주요 포인트:
@@ -798,6 +903,8 @@ AI Day의 큰 흐름은 생성형 AI를 실제 프로덕션으로 가져가기 �
 - 공유용 한줄: Amazon Quick은 흩어진 사내 정보를 한 AI 업무 동료로 묶고, 답변에서 실행까지 이어가려는 업무 AX 플랫폼이다.
 
 ## sel-dev306 - [LG유플러스] AWS Kiro로 가속하는 IaC 혁신과 레거시 전환
+
+[개별 세션 문서](sessions/ai_day/sel-dev306.md)
 
 - 시간/트랙/레벨/발표자: 16:10-16:50 KST / Track 9 / 300 - Advanced / 양승만, 데브옵스 엔지니어, LG유플러스; 윤병찬, 데브옵스 엔지니어, LG유플러스
 - 요약: LG유플러스가 AWS Kiro를 활용해 Terraform IaC 컨벤션을 정리하고 레거시 코드를 표준화한 경험을 공유했다. 발표자는 AI 에이전트가 코드 생성 속도는 높였지만, 컨벤션이 정리되지 않은 코드베이스에서는 스타일 혼란, 리뷰 부담, 온보딩 난이도, 영향도 파악 문제가 더 커졌다고 설명했다.

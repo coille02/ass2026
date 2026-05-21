@@ -4,12 +4,16 @@ AWS Summit Seoul 2026에 참석한 뒤, 공개 라이브스트림 VOD와 세션 
 
 ## 먼저 읽을 문서
 
-- [AX TF 공유용: AWS Summit Seoul 2026에서 본 전사 AX 도입 관점](docs/ax_tf_summit_share.md)
+- [AWS Summit Seoul 2026 AX 관점 통합 정리](docs/ax_total_perspective.md)
 
 ## 세부 문서
 
 - [Industry Day 영상 요약](docs/industry_day_summary.md)
 - [AI Day 영상 요약](docs/ai_day_summary.md)
+- [Industry Day 세션별 정리](docs/industry_day_sessions.md)
+- [AI Day 세션별 정리](docs/ai_day_sessions.md)
+- [Industry Day AX 관점 정리](docs/industry_day_ax_perspective.md)
+- [AI Day AX 관점 정리](docs/ai_day_ax_perspective.md)
 - [AX TF 공유 노트](docs/ax_tf_sharing_note.md)
 - [AX TF 관점별 사례와 느낀 점](docs/ax_tf_perspective_cases.md)
 - [Industry Day 세션 인덱스](docs/industry_day_session_index.md)

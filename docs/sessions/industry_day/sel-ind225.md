@@ -1,0 +1,28 @@
+# sel-ind225 - [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정
+
+[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+
+**Title/Time/Track/Speakers**  
+- 제목: [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정
+- 시간: 2026-05-20 12:50-13:30 KST
+- 트랙: Industry Day / Manufacturing & Industrial, Software & Internet / Artificial Intelligence, Open Source
+- 발표자: 유현성 그룹장, 삼성전자; 김제민 파트장, 삼성전자
+
+**핵심 요약**  
+삼성전자는 Samsung Account처럼 21억 글로벌 사용자와 대규모 EKS 환경을 운영하는 비즈니스 크리티컬 시스템에서 에이전틱 AI를 개발과 운영 양쪽에 적용한 경험을 공유했다. 개발 영역에서는 AI-DLC 방식으로 의도와 실행을 분리하고, Knowledge Base와 Human-in-the-Loop 거버넌스를 결합해 리드타임을 약 70% 단축했다고 설명했다. 운영 영역에서는 AIOps, SecOps, FinOps, 변경관리 분과에 에이전트를 배치해 장애 탐지, 변경 영향도 분석, WAF/로그 분석, 자동 롤백 같은 반복 업무를 줄이는 방향을 제시했다. 발표의 결론은 에이전트를 도입하는 것 자체보다 엔지니어의 판단 구조와 거버넌스를 보존하는 "Human First" 운영 모델이 중요하다는 점이다.
+
+**주요 포인트**
+- 삼성계정은 초당 수백만 요청, 수십 개 네임스페이스의 EKS 클러스터를 운영하는 환경으로 소개됨.
+- 운영 에이전트와 보안 에이전트는 단순 챗봇이 아니라 도구 선택과 행동 수행을 포함하는 에이전틱 AI로 설명.
+- AI-DLC는 요구사항, 계획, 검증, 실행을 분리해 품질 편차와 대기 시간을 줄이는 구조.
+- AIOps 목표로 장애 탐지율 개선, MTTR 단축, Human-in-the-Loop 비율 축소가 언급됨.
+- Kiro, Amazon Q, Amazon Bedrock AgentCore를 직접 호출하지 않고 보안 검토와 내부 경유 구조를 두는 방식이 강조됨.
+
+**AWS/기술 키워드**  
+Amazon EKS, Amazon Bedrock AgentCore, Amazon Q, Kiro, AIOps, SecOps, FinOps, WAF 로그, Knowledge Base, Human-in-the-Loop, RBAC/ABAC
+
+**현장 메모로 남길 점**  
+삼성 사례의 핵심은 "AI가 코드를 더 빨리 쓰게 한다"보다 "대규모 운영 조직의 일하는 방식을 다시 설계한다"에 가깝다. 보안·거버넌스·운영 승인 체계를 먼저 세운 뒤 에이전트를 붙이는 순서가 인상적이다.
+
+**블로그용 한줄**  
+삼성전자는 에이전틱 AI를 개발 생산성 도구가 아니라 AIOps와 거버넌스를 포함한 엔터프라이즈 운영 체계로 확장하고 있다.

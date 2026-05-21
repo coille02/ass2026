@@ -1,0 +1,28 @@
+# sel-prt101-s - The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠, Dataiku)
+
+[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+
+**제목/시간/트랙/발표자**  
+- 제목: The Platform for AI Success: Enterprise AI와 Agent 전략 (sponsored by 데이터이쿠)
+- 시간: 2026-05-20 15:30-15:50 KST
+- 트랙: Industry Day / Artificial Intelligence
+- 발표자: 김영석 상무, Dataiku
+
+**핵심 요약**  
+Dataiku는 많은 기업이 AI를 사용하고 있지만 실제 가치를 만드는 기업은 소수에 그친다는 문제의식에서 출발했다. 발표자는 엔터프라이즈 AI 성공의 핵심을 사용자, 특히 현업 도메인 전문가가 직접 주도할 수 있는 플랫폼에 두었다. Dataiku는 기존 MLops 기반 위에 생성형 AI와 에이전틱 AI를 통합하고, 여러 데이터·모델·애플리케이션을 연결하는 오케스트레이션 레이어로 자신들의 플랫폼을 설명했다. 특히 엔터프라이즈 환경에서는 완전 자율 에이전트보다 결정론적 프로세스, 휴먼 인 더 루프, 거버넌스가 결합된 구조화된 에이전트가 필요하다고 강조했다.
+
+**주요 포인트**
+- AI 실패 원인으로 현업과 AI 엔지니어의 소통 괴리, 불명확한 유스케이스, 데이터 파편화, 조직문화 경직성, 보안·규제·거버넌스 부재를 제시했다.
+- 데이터 플랫폼을 완전히 새로 만들 때까지 기다리기보다, 현재 흩어진 데이터를 연결해 AI를 실행하는 cross-platform orchestration이 필요하다고 말했다.
+- Dataiku는 노코드·로코드·하이코드 사용자를 모두 지원하고, 데이터 연결부터 모델 개발·배포·에이전트화까지 단일 UX로 제공한다고 소개했다.
+- 엔터프라이즈 에이전트는 확률적 LLM 호출만으로 충분하지 않으며, 미리 정의된 워크플로와 분기, 루프, 메모리, 병렬 처리가 포함된 결정론적 흐름이 필요하다고 설명했다.
+- 제조 유지보수 스케줄링 사례에서는 센서 데이터, 설비 정보, 보고서, 예측 모델, 벡터 DB, 멀티 에이전트를 결합해 예방정비 의사결정을 지원하는 구조를 제시했다.
+
+**AWS/기술 키워드**  
+Dataiku, MLOps, AgentOps, Structured Agent, Deterministic Workflow, Human-in-the-loop, Cross-platform Orchestration, Vector DB, Predictive Maintenance, No-code/Low-code/High-code, AWS Bedrock Agent 연계 예정
+
+**현장 메모로 남길 점**  
+발표의 중심 문장은 "사용자가 쓰지 않는 AI는 성공할 수 없다"에 가까웠다. 엔터프라이즈 AI는 모델 성능보다 현업 채택, 통제, 반복 가능한 운영 흐름이 더 큰 병목이라는 메시지가 강했다.
+
+**블로그용 한줄**  
+Dataiku는 현업 도메인 전문가가 데이터, 모델, 에이전트를 한 플랫폼에서 오케스트레이션하고 통제할 수 있어야 엔터프라이즈 AI가 실제 성과로 이어진다고 강조했다.

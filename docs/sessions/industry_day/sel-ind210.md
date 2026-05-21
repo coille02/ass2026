@@ -1,0 +1,28 @@
+# sel-ind210 - [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps
+
+[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+
+**Title/Time/Track/Speakers**  
+- 제목: [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps
+- 시간: 2026-05-20 12:50-13:30 KST
+- 트랙: Industry Day / Manufacturing & Industrial / Artificial Intelligence, Developer Tools, Industry Solutions
+- 발표자: 조성철 시니어 솔루션즈 아키텍트, AWS; 조현영 리더, 포스코
+
+**핵심 요약**  
+포스코 광양제철소는 설비 예지정비에서 현장 엔지니어가 직접 AI 모델을 만들고 운영할 수 있도록 AWS Kiro와 SageMaker MLOps를 결합한 사례를 발표했다. 기존에는 모델 하나를 만드는 데 워킹데이 기준 약 2주가 필요했고, 배포까지 포함하면 한 달 이상 걸리는 구조였지만, 발표에서는 이노핀스(InnoPince) 기반 프로세스로 약 2주 작업을 2시간 수준으로 줄였다고 설명했다. Kiro는 장애 보고서와 센서 데이터를 분석해 전조 신호와 알고리즘 후보를 제시하고, SageMaker MLOps는 전처리·훈련·평가·배포·모니터링·재학습을 자동화한다. 제조 현장의 도메인 지식이 모델 개발의 핵심 입력이 되도록 만든 점이 세션의 중심 메시지다.
+
+**주요 포인트**
+- 예지정비 도입의 장애물로 모델 개발 시간, 수많은 설비 확장성, 대정비 이후 기준치 재조정 문제가 제시됨.
+- Kiro는 요구사항 정의, 데이터 분석, 알고리즘 추천, 모델 코드 생성까지 지원하는 AI 에이전트로 설명.
+- SageMaker Model Monitor가 드리프트를 감지하면 재학습 파이프라인과 모델 교체가 이어지는 구조를 설계.
+- 고장 이전 패턴과 전조 신호를 조기에 탐지해 2시간 이상 라인 정지 가능성이 있는 상황에 선제 대응하는 목표를 제시.
+- 향후 모델 공장을 선정하고 AWS 클라우드와 연계해 제조 현장 AI 혁신 범위를 확대할 계획을 공유.
+
+**AWS/기술 키워드**  
+AWS Kiro, Amazon SageMaker, SageMaker MLOps, SageMaker Model Monitor, 예지정비, 드리프트 감지, 자동 재학습, 제조 AI, InnoPince
+
+**현장 메모로 남길 점**  
+제조 AI의 병목은 모델 알고리즘보다 현장 데이터 해석과 운영 자동화에 있다. 포스코 사례는 현장 엔지니어의 지식을 Kiro가 구조화하고 SageMaker가 운영화하는 조합으로 읽힌다.
+
+**블로그용 한줄**  
+포스코는 Kiro와 SageMaker MLOps를 결합해 제철소 예지정비 모델 개발을 현장 주도형 AI 운영 체계로 전환했다.
