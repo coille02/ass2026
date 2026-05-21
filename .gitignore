@@ -1,0 +1,13 @@
+audio/
+metadata/
+transcripts/
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.ts
+__pycache__/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
