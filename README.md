@@ -4,7 +4,7 @@ AWS Summit Seoul 2026에 참석한 뒤, 공개 라이브스트림 VOD와 세션 
 
 ## 먼저 읽을 문서
 
-- [AWS Summit Seoul 2026 AX 관점 통합 정리](docs/ax_total_perspective.md)
+- [AWS Summit Seoul 2026 참석 정리: 카카오페이 AX TF 관점](docs/ax_tf_share_refined.md)
 
 ## 세부 문서
 
@@ -14,6 +14,7 @@ AWS Summit Seoul 2026에 참석한 뒤, 공개 라이브스트림 VOD와 세션 
 - [AI Day 세션별 정리](docs/ai_day_sessions.md)
 - [Industry Day AX 관점 정리](docs/industry_day_ax_perspective.md)
 - [AI Day AX 관점 정리](docs/ai_day_ax_perspective.md)
+- [AWS Summit Seoul 2026 AX 관점 통합 정리](docs/ax_total_perspective.md)
 - [AX TF 공유 노트](docs/ax_tf_sharing_note.md)
 - [AX TF 관점별 사례와 느낀 점](docs/ax_tf_perspective_cases.md)
 - [Industry Day 세션 인덱스](docs/industry_day_session_index.md)
@@ -22,7 +23,7 @@ AWS Summit Seoul 2026에 참석한 뒤, 공개 라이브스트림 VOD와 세션 
 ## 디렉터리
 
 - `docs/`: 내부 공유용으로 바로 읽을 수 있는 최종 문서
-- `summaries/`: 배치별 원본 요약과 개별 세션 요약
+- `summaries/`: 작업 과정에서 생성한 원본 요약
 - `data/`: 세션 메타데이터
 - `scripts/`: VOD 전사와 문서 병합에 사용한 보조 스크립트
 
