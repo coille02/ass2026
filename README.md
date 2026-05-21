@@ -2,7 +2,11 @@
 
 AWS Summit Seoul 2026에 참석한 뒤, 공개 라이브스트림 VOD와 세션 메타데이터를 바탕으로 정리한 문서 모음입니다.
 
-## 문서
+## 먼저 읽을 문서
+
+- [AX TF 공유용: AWS Summit Seoul 2026에서 본 전사 AX 도입 관점](docs/ax_tf_summit_share.md)
+
+## 세부 문서
 
 - [Industry Day 영상 요약](docs/industry_day_summary.md)
 - [AI Day 영상 요약](docs/ai_day_summary.md)
