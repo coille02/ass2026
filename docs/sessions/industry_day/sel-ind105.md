@@ -25,3 +25,22 @@
 
 ### 블로그용 한줄
 > AWS 피지컬 AI 전략은 디지털 트윈과 클라우드 시뮬레이션을 엣지의 자율 행동으로 연결해 제조와 로보틱스 혁신을 가속한다.
+
+### 전사 기반 상세 보강
+
+- 세션 맥락: AWS 피지컬 AI로 실현하는 기업의 차세대 혁신 전략
+- 공식 설명 보강: 2030년, 7조 달러 규모의 자율 경제 시대가 열릴 것으로 예상되는 가운데 IoT 센싱부터 엣지 자율성까지의 AWS 피지컬 AI의 6단계 아키텍처를 통해 한국 제조업이 글로벌 경쟁력을 확보하고, 생산성을 극대화하며 새로운 비즈니스 가치를 실현하는 방법을 소개합니다.
+- 전사에서 반복적으로 확인된 키워드: 정책, RAG, agent, 데이터, S3, 감사, DevOps, 전략, 비즈니스, EKS
+- 발표에서 두드러진 주제 축: governance, data, infra, agent
+
+#### 발표 흐름
+- 초반: RAG, 감사, 전략, 비즈니스, 아키텍처 중심으로 data, infra를 다룬다.
+- 중반: 정책, RAG, agent, 데이터, S3 중심으로 governance, data, infra를 다룬다.
+- 후반: agent, RAG, DevOps 중심으로 data, agent를 다룬다.
+
+#### 전사에서 확인할 만한 구간
+- 00:21 부근: 아키텍처 관련 설명이 나온다. 핵심 문맥은 `AWS 피지컬 AI에 6단계 아키텍처를 통해 한국 제조업이 글로벌 경쟁력을 확보하고`
+- 17:04 부근: EKS 관련 설명이 나온다. 핵심 문맥은 `EKS,`
+- 20:24 부근: HyperPod, S3 관련 설명이 나온다. 핵심 문맥은 `again using SageMaker HyperPod S3`
+- 27:32 부근: agent 관련 설명이 나온다. 핵심 문맥은 `Think about agents operating simulation environments,`
+- 32:28 부근: agent 관련 설명이 나온다. 핵심 문맥은 `through an agentex workflow`
