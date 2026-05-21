@@ -1,6 +1,6 @@
 # 복잡함 속의 질서 : Beyond AI Adoption in Agentic Era (sponsored by 메가존클라우드, MegazoneCloud)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

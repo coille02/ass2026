@@ -1,6 +1,6 @@
 # Amazon Bedrock 기반 GitLab Duo 에이전트 플랫폼으로 혁신 가속화 (sponsored by Gitlab)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

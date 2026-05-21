@@ -1,6 +1,6 @@
 # 다운타임 0의 도전: Agentic AI와 Bedrock으로 완성하는 자율 예지정비 (sponsored by (주)두산 디지털이노베이션BU, Doosan Corporation Digital Innovation BU)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

@@ -1,6 +1,6 @@
 # [삼성전자] 200개국 삼성 스마트 TV 앱 데이터를 자연어로 묻다: 에이전틱 AI on AWS
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

@@ -1,6 +1,6 @@
 # Unlocking Cost-Efficient Cloud and AI Performance on AWS with AMD EPYC (sponsored by AMD)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

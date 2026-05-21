@@ -1,6 +1,6 @@
 # Notion: API를 넘어 플랫폼으로 (sponsored by 노션, Notion)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

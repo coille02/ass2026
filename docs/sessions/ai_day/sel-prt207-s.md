@@ -1,6 +1,6 @@
 # LLM 애플리케이션 프로덕션 운영, Observability로 풀다 (sponsored by 와탭, WhaTap)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

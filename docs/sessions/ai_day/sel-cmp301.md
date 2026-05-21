@@ -1,6 +1,6 @@
 # AWS Trainium 기반 LLM 추론 A to Z: Neuron 환경 이해부터 성능 최적화까지
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

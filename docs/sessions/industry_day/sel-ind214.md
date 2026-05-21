@@ -1,6 +1,6 @@
 # [요기요] 요기요의 AIOps: SRE 운영의 콘솔 탈출기
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

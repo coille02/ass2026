@@ -1,6 +1,6 @@
 # LG전자, 에이전틱 AI 기반 멀티에이전트 플랫폼 구축을 통한 업무혁신
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

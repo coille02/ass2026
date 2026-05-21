@@ -1,6 +1,6 @@
 # AI ‘개발’에서 ‘운영’으로: 엔터프라이즈 AI 전환 (sponsored by 베스핀글로벌 / BESPIN GLOBAL)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

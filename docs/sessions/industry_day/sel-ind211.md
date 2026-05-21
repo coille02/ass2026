@@ -1,6 +1,6 @@
 # [바비톡] 바비톡의 AX여정: 에이전틱 AI로 K-beauty를 바꾸다
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

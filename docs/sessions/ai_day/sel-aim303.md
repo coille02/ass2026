@@ -1,6 +1,6 @@
 # 40분 완성! SageMaker AI 기반 에이전틱 모델 구축 및 배포
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

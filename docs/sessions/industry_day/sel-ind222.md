@@ -1,6 +1,6 @@
 # [하나투어 I AK아이에스] AI가 바꾸는 여행 산업의 무대 뒤: 하나투어, 제주항공의 업무혁신
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

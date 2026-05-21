@@ -1,6 +1,6 @@
 # LLM and Agent Workloads with DRA GPU를 더 잘게, 더 똑똑하게 - DRAmatic하게(sponsored by GS네오텍)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

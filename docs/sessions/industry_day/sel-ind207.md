@@ -1,6 +1,6 @@
 # [현대카드] 현대카드 데이터 사이언스 플랫폼 진화 여정: Hybrid to Coding 에이전트
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

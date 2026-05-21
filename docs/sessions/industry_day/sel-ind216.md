@@ -1,6 +1,6 @@
 # [현대자동차] 현대자동차의 AI 기반 마켓인텔리전스 혁신 (AI for MI)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

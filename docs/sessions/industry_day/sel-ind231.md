@@ -1,6 +1,6 @@
 # [바이프로스트 I 스트라드비젼] 피지컬 AI 학습을 위한 데이터 전략: 실 데이터와 합성 데이터로 Sim-to-Real 가속화
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

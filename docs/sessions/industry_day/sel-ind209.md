@@ -1,6 +1,6 @@
 # [빗썸] 빗썸은 생성형 AI를 어떻게 안전하게 운영하는가: Claude Code on Amazon Bedrock
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

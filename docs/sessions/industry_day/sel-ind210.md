@@ -1,6 +1,6 @@
 # [포스코] POSCO 광양제철소 설비 예지정비 혁신: AWS Kiro와 MLOps
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

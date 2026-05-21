@@ -1,6 +1,6 @@
 # [SK인텔릭스] SK인텔릭스가 구현하는 에이전틱 AI Robotics의 미래
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

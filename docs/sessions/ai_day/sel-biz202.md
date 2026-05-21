@@ -1,6 +1,6 @@
 # Amazon Connect Customer를 활용한 에이전틱 AI 기반 고객 경험 혁신
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

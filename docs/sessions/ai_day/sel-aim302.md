@@ -1,6 +1,6 @@
 # [하이퍼커넥트] 하이퍼커넥트의 HyperPod 기반 Slurm on EKS 도입기
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

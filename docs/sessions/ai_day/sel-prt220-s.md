@@ -1,6 +1,6 @@
 # 당신의 AI 환경은 안녕하신지요? (sponsored by Zscaler)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

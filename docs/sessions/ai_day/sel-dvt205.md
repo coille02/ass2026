@@ -1,6 +1,6 @@
 # Strands Agents와 함께 스스로 진화하는 AI 에이전트
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

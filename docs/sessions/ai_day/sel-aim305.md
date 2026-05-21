@@ -1,6 +1,6 @@
 # [삼성전자] 21억 사용자규모 삼성 어카운트의 에이전틱 AIOps on AWS
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

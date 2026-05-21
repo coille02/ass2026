@@ -1,6 +1,6 @@
 # AWS AI와 서버리스로 구축하는 완성차 지능형 상품 전략 플랫폼 (sponsored by 이테크시스템 / ETECH SYSTEM)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

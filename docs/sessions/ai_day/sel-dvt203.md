@@ -1,6 +1,6 @@
 # [LG전자] AI 기반 개발 라이프사이클 (AI-DLC) 소개
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

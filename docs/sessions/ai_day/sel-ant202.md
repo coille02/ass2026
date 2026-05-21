@@ -1,6 +1,6 @@
 # 나야, 차세대 OpenSearch: 에이전틱 AI를 곁들인
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

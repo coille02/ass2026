@@ -1,6 +1,6 @@
 # 3가지 관점으로 살펴보는 Red Hat OpenShift Service on AWS(ROSA)를 활용한 현대화의 새로운 접근 방식 (sponsored by Red Hat)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

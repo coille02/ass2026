@@ -1,6 +1,6 @@
 # 인퍼런스와 모델 퍼포먼스 최적화를 위한 EKS 아키텍처
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

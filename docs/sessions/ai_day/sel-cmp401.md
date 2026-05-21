@@ -1,6 +1,6 @@
 # 대규모 분산 학습 AWS ParallelCluster 로 시작하기
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

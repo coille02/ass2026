@@ -1,6 +1,6 @@
 # [Config] 피지컬 AI 기업 Config의 AWS 기반 Robotics Foundation Model 개발 여정
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

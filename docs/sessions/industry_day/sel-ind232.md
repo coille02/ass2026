@@ -1,6 +1,6 @@
 # [현대지에프홀딩스] SMUS 기반 전사 MLOps 플랫폼으로 실현한 데이터 혁명
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

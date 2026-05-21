@@ -1,6 +1,6 @@
 # [정보통신산업진흥원] AI G3 코리아: NIPA와 AWS가 만드는 공공 혁신
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

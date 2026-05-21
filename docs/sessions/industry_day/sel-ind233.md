@@ -1,6 +1,6 @@
 # [AMOREPACIFIC] AMOREPACIFIC의 AWS 기반 AI뷰티테크 플랫폼 서비스
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

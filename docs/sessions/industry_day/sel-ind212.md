@@ -1,6 +1,6 @@
 # [AB180] AB180이 SaaS 에이전틱 AI를 설계하는 방법
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

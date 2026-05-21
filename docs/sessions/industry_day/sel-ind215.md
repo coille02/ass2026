@@ -1,6 +1,6 @@
 # [야놀자] Multi-Agent로 AIOps를 혁신하다: 야놀자의 Bedrock AgentCore 구축 사례
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

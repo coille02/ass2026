@@ -1,6 +1,6 @@
 # [롯데백화점] AI로 잇는 쇼핑 경험: 롯데백화점의 AI 에이전트 구축기
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

@@ -1,6 +1,6 @@
 # [LG유플러스] AWS Kiro로 가속하는 IaC 혁신과 레거시 전환
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

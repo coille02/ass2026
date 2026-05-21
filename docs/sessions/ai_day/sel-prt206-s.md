@@ -1,6 +1,6 @@
 # 속도와 제어를 동시에 - Cloudflare에서 AI 에이전트 구축하기 (sponsored by 클라우드플레어/Cloudflare)
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

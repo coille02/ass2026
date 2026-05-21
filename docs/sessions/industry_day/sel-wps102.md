@@ -1,6 +1,6 @@
 # 중앙대의료원_의료진이 직접 만드는 의료 AI
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

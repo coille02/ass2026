@@ -1,6 +1,6 @@
 # 에이전트 성능 평가와 개선: 개발부터 운영까지
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

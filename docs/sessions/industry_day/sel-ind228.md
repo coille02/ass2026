@@ -1,6 +1,6 @@
 # [SK텔레콤] SK텔레콤, 이제는 AI에게 필요한 데이터 플랫폼으로
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

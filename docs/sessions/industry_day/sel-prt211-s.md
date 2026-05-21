@@ -1,6 +1,6 @@
 # AI 컨시어지: 기억하는 AI가 만드는 다음 세대 고객 경험 (sponsored by 센드버드 / Sendbird)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

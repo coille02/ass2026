@@ -1,6 +1,6 @@
 # 당근의 CloudHSM/KMS기반 대규모 서명키관리 시스템구축기
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

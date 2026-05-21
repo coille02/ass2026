@@ -1,6 +1,6 @@
 # [삼성전자 I 우아한형제들 I TwelveLabs] 혁신가와 리더의 대담 - AI로 이끄는 비즈니스 혁신
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

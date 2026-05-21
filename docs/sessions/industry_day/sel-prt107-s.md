@@ -1,6 +1,6 @@
 # AWS All-in 마이그레이션으로 실현한 SM하이플러스의 AI 모빌리티 전략 (sponsored by NDS)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

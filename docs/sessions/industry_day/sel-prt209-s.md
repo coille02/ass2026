@@ -1,6 +1,6 @@
 # 에버랜드의 VMware에서 Nutanix 클라우드 클러스터로 마이그레이션 여정 (sponsored by Nutanix)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

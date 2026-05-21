@@ -1,6 +1,6 @@
 # AWS 차세대 AI 인프라: 리전에서 AI Factory까지
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

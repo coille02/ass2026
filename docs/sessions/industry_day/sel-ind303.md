@@ -1,6 +1,6 @@
 # LG U+의 에이전틱 AI 기반 대규모 마이그레이션 여정
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

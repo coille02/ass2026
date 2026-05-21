@@ -1,6 +1,6 @@
 # [넥슨코리아] 새벽 3시, 18만 개의 모델이 대신 판단한다 : 넥슨의 에이전틱 Ops
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

@@ -1,6 +1,6 @@
 # [웅진씽크빅] 웅진씽크빅의 AI-DLC를 활용한 교육자용 AI 에이전트 구축기
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

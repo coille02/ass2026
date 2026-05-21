@@ -1,6 +1,6 @@
 # [KB국민은행] KBaaS, 금융이 플랫폼 속으로 : KB국민은행의 임베디드 금융 전략과 API 인프라 현대화
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

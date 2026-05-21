@@ -1,6 +1,6 @@
 # [마이리얼트립] 마이리얼트립의 AI 네이티브 소수정예 팀: 일하는 방식의 재정의
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

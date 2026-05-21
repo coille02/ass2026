@@ -1,6 +1,6 @@
 # [GS리테일] 숏폼 시대, GS SHOP의 영상기반 AI 상품 추천플랫폼 구축기
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

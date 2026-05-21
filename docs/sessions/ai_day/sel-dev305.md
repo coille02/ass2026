@@ -1,6 +1,6 @@
 # [네오위즈파트너스 | 알고릭스코퍼레이션] IaC 기반 EKS 멀티테넌시와 Sidecar-less 네트워킹
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

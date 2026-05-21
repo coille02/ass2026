@@ -1,6 +1,6 @@
 # [위로보틱스 I RLWRLD] AWS 위에서 만드는 로봇의 미래: 리얼월드의 RFM 학습과 위로보틱스의 휴머노이드 조작기능 구현
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

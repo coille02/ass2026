@@ -1,6 +1,6 @@
 # [국가인공지능전략위원회 I KIM & CHANG I LIG D&A] 국방 AX: AI와 클라우드로 재편되는 미래 전쟁 구조
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

@@ -1,6 +1,6 @@
 # VMware 종속을 넘어 자율로, 삼성SDS와 함께하는 AX 전략 (sponsored by Samsung SDS)
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

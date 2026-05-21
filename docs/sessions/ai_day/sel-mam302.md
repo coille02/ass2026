@@ -1,6 +1,6 @@
 # AIOps 도전과 실전: AI SecOps에서 DevOps 에이전트까지
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

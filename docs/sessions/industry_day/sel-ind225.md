@@ -1,6 +1,6 @@
 # [삼성전자] 삼성전자의 에이전틱 AI 전략- 개발혁신과 AIOps 여정
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 

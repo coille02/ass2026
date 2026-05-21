@@ -1,6 +1,6 @@
 # 신뢰할 수 있는 KMS 아키텍처의 진화와 서명키 관리 전략
 
-[AI Day 전체 요약으로 돌아가기](../../ai_day_summary.md)
+[AI Day 세션 목록으로 돌아가기](../../ai_day_sessions.md)
 
 ## 세션 정보
 

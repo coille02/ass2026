@@ -1,6 +1,6 @@
 # 규제 환경에서의 통제 가능한 AI 에이전트 아키텍처
 
-[Industry Day 전체 요약으로 돌아가기](../../industry_day_summary.md)
+[Industry Day 세션 목록으로 돌아가기](../../industry_day_sessions.md)
 
 ## 세션 정보
 
