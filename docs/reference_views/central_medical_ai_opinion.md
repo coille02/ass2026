@@ -1,6 +1,5 @@
 # 중앙대의료원 의료 AI 관점 참고
 
-참고 영상: [YouTube - 중앙대의료원 관련 영상](https://youtu.be/6dJCSX4eMe0?si=wKxDJL4LCV34Zd8J)  
 연결 세션: [중앙대의료원_의료진이 직접 만드는 의료 AI](../sessions/industry_day/sel-wps102.md)
 
 ## 정리 목적
